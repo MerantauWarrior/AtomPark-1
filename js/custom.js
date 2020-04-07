@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  console.log('Work!');
 //  Tabs
   $('.js-tab').click(function (e) {
     e.preventDefault();
