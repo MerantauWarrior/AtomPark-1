@@ -15,12 +15,13 @@
 }
 
 @media screen and (max-width: 767px){
-    h1, h2{
+    .info-page h1,
+    .info-page h2{
         margin-bottom: 40px;
         font-size: 20px;
         line-height: 24px;
     }
-    p{
+    .info-page p{
         font-size: 16px;
         line-height: 19px;
     }
@@ -47,7 +48,8 @@
     .info-page-article__description{
         margin-top: 15px;
     }
-    .title-m-tb-big{
+    .info-page h1.title-m-tb-big,
+    .info-page h2.title-m-tb-big{
         margin: 60px 0;
     }
     /*Base page*/
