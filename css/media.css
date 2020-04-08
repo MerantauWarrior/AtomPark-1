@@ -66,8 +66,17 @@
     .documentation-item{
         margin-bottom: 30px;
     }
-    .video__movie{
-        margin-bottom: 40px;
+    .video__arrow{
+        top:auto;
+        bottom: -50px;
+    }
+    .video__arrow-prev{
+        left: 50%;
+        margin-left: -30px;
+    }
+    .video__arrow-next{
+        right: 50%;
+        margin-right: -30px;
     }
 }
 @media screen and (max-width: 767px) and (orientation: portrait){
