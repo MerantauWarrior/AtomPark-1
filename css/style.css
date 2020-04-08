@@ -13,7 +13,7 @@ body{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-button, input, a{
+button, input, a, .slick-slide{
     outline: none;
 }
 button, input{
@@ -260,12 +260,15 @@ a.support__contacts-mail{
     line-height: 19px;
 }
 /*Video page*/
-.video__movie{
+.video__movies{
     position: relative;
     max-width: 807px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
+}
+.video__movie{
+    position: relative;
     padding-top: 56.25%;
 }
 .video__movie iframe{
@@ -274,6 +277,19 @@ a.support__contacts-mail{
     left: 0;
     width: 100%;
     height: 100%;
+}
+.video__arrow{
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    cursor: pointer;
+    z-index: 2;
+}
+.video__arrow-prev{
+    left: -30px;
+}
+.video__arrow-next{
+    right: -30px;
 }
 /*Documentation page*/
 .documentation__items{
