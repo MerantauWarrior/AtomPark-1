@@ -16,6 +16,9 @@ body{
 button, input, a, .slick-slide{
     outline: none;
 }
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
 button, input{
     padding: 0;
     border: none;
@@ -23,6 +26,12 @@ button, input{
 img {
     display: block;
     max-width: 100%;
+}
+.blue-text{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1062AA;
 }
 .container,
 .container-content{
@@ -80,7 +89,6 @@ img {
     margin: 130px 0;
 }
 .info-page p{
-    /*margin: 0 0 80px 0;*/
     margin-bottom: 80px;
     font-size: 18px;
     line-height: 21px;
@@ -330,4 +338,40 @@ a.support__contacts-mail{
     margin-top: 10px;
     font-size: 14px;
     line-height: 16px;
+}
+/*Single article*/
+.single-article{
+    padding: 80px 0;
+}
+.single-article h1{
+    margin: 0 0 80px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    line-height: 37px;
+    color: #333333;
+    text-align: center;
+}
+.single-article h1 + p{
+    margin-bottom: 80px;
+}
+.single-article p{
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.single-article p:last-child{
+    margin-bottom: 80px;
+}
+.single-article h5{
+    margin-bottom: 29px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1062AA;
+}
+.single-article p + h5{
+    margin-top: 47px;
+}
+.single-article p + p{
+    margin-top: 29px;
 }
