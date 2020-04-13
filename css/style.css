@@ -907,10 +907,13 @@ a.blog-post__counter:hover svg{
     color: #ffffff;
 }
 
-.blog-post__sidebar{
+#sidebar{
     width: 100%;
     max-width: 262px;
     margin-left: auto;
+}
+.blog-post__sidebar{
+    width: 100%;
     background-color: #fff;
 }
 .blog-post-sidebar__author{

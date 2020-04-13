@@ -41,5 +41,12 @@ $(document).ready(function () {
       slidesToShow: 1
     });
   }
-
+  if($('#sidebar').length > 0){
+    $('#sidebar').stickySidebar({
+      topSpacing: 20,
+      bottomSpacing: 20,
+      containerSelector: '.main-content',
+      innerWrapperSelector: '.blog-post__sidebar'
+    });
+  }
 });
