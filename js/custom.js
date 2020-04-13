@@ -32,4 +32,14 @@ $(document).ready(function () {
       }
     });
   }
+//  BlogPost slider
+  if($('.blog-post-slider').length > 0){
+    $('.blog-post-slider').slick({
+      dots: true,
+      arrows: false,
+      infinite: false,
+      slidesToShow: 1
+    });
+  }
+
 });
