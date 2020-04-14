@@ -388,8 +388,9 @@ a.support__contacts-mail{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 945px;
+    max-width: 975px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .blog-post h1,
 .blog-post__general-title{
@@ -744,6 +745,9 @@ a.blog-post__counter:hover svg{
 }
 .blog-post-social__item{
     margin-right: 24px;
+}
+.blog-post-social__item:last-child{
+    margin-right: 0;
 }
 .blog-post-author{
     margin: 63px 0;
