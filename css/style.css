@@ -28,7 +28,8 @@ img {
     max-width: 100%;
 }
 a,
-a svg{
+a svg,
+button{
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     -ms-transition: all 0.25s;
@@ -455,7 +456,7 @@ a.support__contacts-mail{
     margin-bottom: 140px;
 }
 .blog-post__main-img img{
-    width: 100%;
+    margin: 0 auto;
 }
 .blog-post__header{
     position: absolute;
@@ -616,6 +617,10 @@ a.blog-post__counter:hover svg{
     font-size: 18px;
     line-height: 21px;
     font-weight: 700;
+    text-decoration: none;
+    color: #333333;
+}
+.blog-post-similar-article a:hover{
     text-decoration-line: underline;
     color: #1062AA;
 }
@@ -825,6 +830,7 @@ a.blog-post__counter:hover svg{
     text-align: center;
 }
 .inp-blog-post-subscribe{
+    padding: 0 15px;
     font-size: 18px;
     line-height: 21px;
     color: #1062AA;
@@ -849,6 +855,9 @@ a.blog-post__counter:hover svg{
     color: #ffffff;
     background-color: #1062AA;
     cursor: pointer;
+}
+.blog-post-subscribe__btn:hover{
+    background-color: #F7B916;
 }
 .blog-post-read__items{
     display: flex;
@@ -1089,6 +1098,9 @@ a.blog-post__counter:hover svg{
     text-decoration: none;
     line-height: 21px;
     color: #1062AA;
+}
+.blog-sidebar-cta__btn:hover{
+    background-color: #fff;
 }
 .blog-sidebar-cloud{
     display: flex;
