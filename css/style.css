@@ -399,14 +399,14 @@ a.support__contacts-mail{
 }
 .blog-post h3,
 .blog-post h4{
-    margin-bottom: 70px;
+    margin-bottom: 63px;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
 }
 .blog-post *+h3,
 .blog-post *+h4{
-    margin-top: 70px;
+    margin-top: 63px;
 }
 .blog-post h5,
 .blog-post h6{
@@ -553,7 +553,7 @@ a.blog-post__counter:hover svg{
 .blog-post .video__movie,
 .blog-post .table,
 .blog-post-accent{
-    margin: 70px 0;
+    margin: 63px 0;
 }
 .blog-post-slider ul{
     margin-top: 52px;
