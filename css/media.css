@@ -165,7 +165,7 @@
     }
     .blog-post__header{
         position: relative;
-        bottom: 70px;
+        bottom: auto;
         padding-bottom: 23px;
     }
     .blog-post__categories{
@@ -253,7 +253,8 @@
         line-height: 26px;
     }
     .blog-post-accent img{
-        max-width: 100%;
+        width: 100%;
+        max-width:inherit;
         margin-right: 0;
         margin-bottom: 10px;
     }
