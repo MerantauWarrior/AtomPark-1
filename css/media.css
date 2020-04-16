@@ -344,6 +344,29 @@
         font-size: 18px;
         line-height: 26px;
     }
+    /*Faqs page*/
+    .faqs-item__question{
+        height: auto;
+        padding: 15px;
+        font-size: 18px;
+    }
+    .faqs-item__content{
+        padding: 15px;
+    }
+    .faqs-item-answer__title{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .faqs-item-answer__content p{
+        margin-bottom: 0;
+    }
+    .faqs-item__arrow svg{
+        width: 18px;
+    }
+    .faqs__items,
+    .faqs__support{
+        margin-bottom: 40px;
+    }
 
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
