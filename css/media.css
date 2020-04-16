@@ -397,6 +397,7 @@
     }
     .support__contacts{
         margin: 15px 0 30px 0;
+        align-items: center;
     }
     /*Blog post page*/
     .blog-post-social{
