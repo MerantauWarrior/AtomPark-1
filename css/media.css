@@ -367,7 +367,27 @@
     .faqs__support{
         margin-bottom: 40px;
     }
-
+    /*Update page*/
+    .update__body{
+        margin-bottom: 40px;
+    }
+    .update__body b,
+    .update__body strong,
+    .update__body p,
+    .update__body ul{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .update__body p{
+        margin: 0;
+    }
+    .update__status{
+        margin: 40px 0;
+    }
+    .update__status{
+        font-size: 22px;
+        line-height: 26px;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .support__chat{
