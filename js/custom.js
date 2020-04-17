@@ -54,13 +54,12 @@ $(document).ready(function () {
   if ($('.faqs-item').length > 0) {
     $('.faqs-item__question').click(function () {
       $('.faqs-item__question').not($(this)).removeClass('faqs-item__question_opened');
-      $('.faqs-item__question').not($(this)).siblings('.faqs-item__content').slideUp(250);
-      // if( $(this).siblings('.faqs-item__content').is())
+      $('.faqs-item__question').not($(this)).siblings('.faqs-item__content').slideUp(500);
       $(this).toggleClass('faqs-item__question_opened');
-      $(this).siblings('.faqs-item__content').slideToggle(250);
+      $(this).siblings('.faqs-item__content').slideToggle(500);
     });
     $('.faqs-item-answer__title').click(function () {
-      $(this).siblings('.faqs-item-answer__content').slideToggle(250);
+      $(this).siblings('.faqs-item-answer__content').slideToggle(500);
     });
   }
 });
