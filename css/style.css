@@ -690,6 +690,7 @@ a.blog-post__counter:hover svg{
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     line-height: 37px;
+    color: #FFFFFF;
 }
 .blog-cta__description{
     margin: 45px 0;
@@ -717,6 +718,10 @@ a.blog-post__counter:hover svg{
 }
 .blog-post-bottom{
     margin: 63px 0;
+}
+.blog-post-bottom__inner{
+    display: flex;
+    flex-wrap: wrap;
 }
 .blog-post-bottom__title{
     margin-right: 23px;
