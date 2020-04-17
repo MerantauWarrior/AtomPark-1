@@ -240,7 +240,7 @@ a.support__contacts-mail{
 .support__chat:before{
     content: "";
     position: absolute;
-    top: -28px;
+    top: -27px;
     right: 54px;
     width: 30px;
     height: 29px;
