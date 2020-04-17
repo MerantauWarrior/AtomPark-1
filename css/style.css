@@ -1323,8 +1323,10 @@ a.blog-post__counter:hover svg{
     font-weight: 500;
 }
 .update__body .ul-checkmarked-list li:before{
-    /*content: "\2713";*/
+    content: "";
     width: 20px;
+    height: 15px;
+    background: url("../img/update/ul-checked.svg") no-repeat left center, transparent;
 }
 .update__version{
     margin-bottom: 25px;
