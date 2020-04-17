@@ -371,12 +371,21 @@
     .update__body{
         margin-bottom: 40px;
     }
+    .update__block:last-child{
+        margin-bottom: 80px;
+    }
     .update__body b,
     .update__body strong,
     .update__body p,
     .update__body ul{
         font-size: 16px;
         line-height: 19px;
+    }
+    .update__body > ul > li:before{
+        width: 10px;
+    }
+    .update__body .ul-checkmarked-list li:before{
+        content: "✓";
     }
     .update__body p{
         margin: 0;

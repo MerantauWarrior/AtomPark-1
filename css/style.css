@@ -1323,8 +1323,7 @@ a.blog-post__counter:hover svg{
     font-weight: 500;
 }
 .update__body .ul-checkmarked-list li:before{
-    content: "\2714";
-    font-weight: 500;
+    content: "\2713";
     width: 20px;
 }
 .update__version{
