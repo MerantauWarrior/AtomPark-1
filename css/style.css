@@ -782,6 +782,7 @@ a.blog-post__counter:hover svg{
     color: #333333;
 }
 .blog-post-author__about{
+    width: 100%;
     font-size: 14px;
     line-height: 22px;
 }
