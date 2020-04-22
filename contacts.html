@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Contacts</title>
+  <meta name="description" content="-30% на комбо-пакеты для email маркетологов"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<section class="info-page contacts">
+  <h1>Задать вопрос</h1>
+
+  <div class="container-md contacts__main">
+    <div class="contacts__left">
+      <div class="contacts__img">
+        <img src="img/contacts-page/contacts-img.jpg" alt="">
+      </div>
+      <div class="contacts__ask">
+        <div class="contacts__ask-icon"><img src="img/contacts-page/contacts-icon-4.svg" alt=""></div>
+        <div class="contacts__ask-text">Задать вопрос службе поддержки
+          <div class="contacts__ask-arrow">
+            <img src="img/contacts-page/contacts-arrow-down.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contacts__right">
+      <div class="contacts__title">С нами можно связаться:</div>
+      <div class="contacts__items">
+        <div class="contacts__items-row">
+          <div class="contacts-item">
+            <div class="contacts-item__icon"><img src="img/contacts-page/contacts-icon-1.svg" alt=""></div>
+            <div class="contacts-item__info">
+              <div class="contacts-item__title">Отдел продаж:</div>
+              <a href="tel:0 (800) 21 01 91" class="contacts-item__text">0 (800) 21 01 91</a>
+            </div>
+          </div>
+          <div class="contacts-item">
+            <div class="contacts-item__info">
+              <div class="contacts-item__title">Теподдержка:</div>
+              <a href="tel:0 (800) 21 01 91" class="contacts-item__text">0 (800) 21 01 91</a>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__items-row">
+          <div class="contacts-item">
+            <div class="contacts-item__icon"><img src="img/contacts-page/contacts-icon-2.svg" alt=""></div>
+            <div class="contacts-item__info">
+              <div class="contacts-item__title">Онлайн-чат 24\7</div>
+              <div class="contacts-item__text">Наши специалисты готовы ответить на все Ваши вопросы</div>
+            </div>
+          </div>
+          <div class="contacts-item">
+            <a href="#" class="btn-chat">Начать чат</a>
+          </div>
+        </div>
+        <div class="contacts__items-row">
+          <div class="contacts-item">
+            <div class="contacts-item__icon"><img src="img/contacts-page/contacts-icon-3.svg" alt=""></div>
+            <div class="contacts-item__info">
+              <div class="contacts-item__title">Отдел продаж:</div>
+              <a href="mailto:sales@epochta.com.ua" class="contacts-item__text">sales@epochta.com.ua</a>
+            </div>
+          </div>
+          <div class="contacts-item">
+            <div class="contacts-item__info">
+              <div class="contacts-item__title">Техподдержка:</div>
+              <a href="mailto:support@epochta.com.ua" class="contacts-item__text">support@epochta.com.ua</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacts__form">
+      <form action="" method="get" class="contacts__form-inner">
+        <div class="contacts__form-left">
+          <label for="d" class="label-contacts">Вопрос <span>*</span></label>
+          <div class="contacts__form-txt-w-file">
+            <textarea name="d" id="d" class="txt-contacts"></textarea>
+            <label for="fff" class="label-contacts-file">
+              <img src="img/contacts-page/contacts-file.svg" alt="">
+            </label>
+            <input type="file" name="fff" id="fff" multiple>
+          </div>
+        </div>
+        <div class="contacts__form-right">
+          <div class="contacts__form-row">
+            <label for="" class="label-contacts">Отдел <span>*</span></label>
+            <select name="a" id="" class="select-contacts">
+              <option value="0" selected>Техподдержка</option>
+              <option value="3">Техподдержка 1</option>
+              <option value="2">Техподдержка 2</option>
+            </select>
+          </div>
+          <div class="contacts__form-row">
+            <label for="e" class="label-contacts">Ваше Имя <span>*</span></label>
+            <input type="text" name="e" id="e" class="inp-contacts" placeholder="Иванов Иван" required>
+          </div>
+          <div class="contacts__form-row">
+            <label for="w" class="label-contacts">Компания <span>*</span></label>
+            <input type="text" name="w" id="w" class="inp-contacts" placeholder="Иванов Компани" required>
+          </div>
+          <div class="contacts__form-row">
+            <label for="q" class="label-contacts">Email <span>*</span></label>
+            <input type="email" name="q" id="q" class="inp-contacts" placeholder="ivanov@gmail.com" required>
+          </div>
+        </div>
+        <div class="contacts__form-bottom">
+          <button class="btn-contacts" type="submit">Отправить</button>
+          <label for="www" class="checkbox-contacts__form">
+            <input type="checkbox" name="www" id="www">
+            <span></span>
+            Я даю свое согласие на обработку персональных данных
+          </label>
+        </div>
+      </form>
+    </div>
+
+    <div class="contacts__support">
+      <div class="support-rules">
+        <a href="#" class="support-rules__link">Правила оказания технической поддержки</a>
+        <div class="support-rules__icon">
+          <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.70711 8.70711C9.09763 8.31658 9.09763 7.68342 8.70711 7.29289L2.34315 0.928933C1.95262 0.538408 1.31946 0.538408 0.928932 0.928933C0.538407 1.31946 0.538407 1.95262 0.928932 2.34315L6.58579 8L0.928933 13.6569C0.538408 14.0474 0.538408 14.6805 0.928933 15.0711C1.31946 15.4616 1.95262 15.4616 2.34315 15.0711L8.70711 8.70711ZM7 9L8 9L8 7L7 7L7 9Z"
+                  fill="#1062AA"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

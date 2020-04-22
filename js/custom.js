@@ -62,4 +62,11 @@ $(document).ready(function () {
       $(this).siblings('.faqs-item-answer__content').slideToggle(500);
     });
   }
+//  Contacts
+  if ($('.contacts__ask-text').length > 0) {
+    $('.contacts__ask-text').click(function () {
+      $(this).toggleClass('contacts__ask-text_opened');
+      $('.contacts__form').slideToggle(250);
+    });
+  }
 });
