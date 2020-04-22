@@ -60,6 +60,10 @@
         left: 0;
         margin-top: 15px;
     }
+    /*Migration page*/
+    .migration-item{
+        max-width: 30%;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .info-page-article__img{
@@ -74,6 +78,25 @@
     .support__text {
         width: 220px;
         margin-left: 10px;
+    }
+    /*Contacts page*/
+    .contacts__main{
+        justify-content: center;
+    }
+    .contacts__img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contacts__ask{
+        margin: 30px 0;
+    }
+    .contacts__title{
+        text-align: center;
+    }
+    .contacts__form-left,
+    .contacts__form-right,
+    .checkbox-contacts__form{
+        max-width: 48%;
     }
 }
 
