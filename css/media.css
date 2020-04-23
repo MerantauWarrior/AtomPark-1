@@ -61,9 +61,6 @@
         margin-top: 15px;
     }
     /*Migration page*/
-    .migration-item{
-        max-width: 30%;
-    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .info-page-article__img{
@@ -488,9 +485,6 @@
         margin: 40px 0;
         justify-content: center;
     }
-    .migration-item{
-        margin-bottom: 40px;
-    }
     .migration p a{
         font-size: 16px;
     }
@@ -504,6 +498,10 @@
     /*Blog post page*/
     .blog-post-social{
         margin-left: auto;
+    }
+    /*Migration page*/
+    .migration-item{
+        max-width: 50%;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
@@ -532,5 +530,9 @@
     /*Contact page*/
     .contacts-item:nth-child(2){
         margin-left: 67px;
+    }
+    /*Migration page*/
+    .migration-item{
+        max-width: 100%;
     }
 }

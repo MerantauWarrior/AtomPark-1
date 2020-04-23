@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="acb1b020-3489-415e-905a-8b14a54ed89d" name="DO-node-app" url="http://134.209.236.94">
+        <fileTransfer host="134.209.236.94" port="22" privateKey="C:\Users\Boris\Desktop\DOPrivateKEY1-ssh" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

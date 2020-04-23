@@ -1879,6 +1879,14 @@ a.blog-post__counter:hover svg{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    margin: 80px 0 140px 0;
+    margin: 80px 0 100px 0;
+}
+.migration-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 33.3333333%;
+    margin-bottom: 40px;
+    padding: 0 15px;
 }
