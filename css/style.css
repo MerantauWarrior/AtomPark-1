@@ -1917,15 +1917,6 @@ a.blog-post__counter:hover svg{
     color: #1062AA;
     text-decoration: none;
 }
-.feedback__form{
-    position: relative;
-}
-.feedback__form-close{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-}
 .feedback__rating{
     display: flex;
     margin-bottom: 44px;
@@ -1943,4 +1934,47 @@ a.blog-post__counter:hover svg{
 }
 .btn-contacts--feedback{
     margin-right: 166px;
+}
+/*Promo Page*/
+.promo-page{
+    padding-bottom: 60px;
+    color: #333333;
+}
+.promo-page__items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -56px;
+    margin-right: -56px;
+}
+.promo-page__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 99px;
+    margin-left: 56px;
+    margin-right: 56px;
+    margin-bottom: 80px;
+}
+.promo-page__item img{
+    max-width: 99px;
+}
+/*Requisites Page*/
+.requisites-page{
+    padding-bottom: 60px;
+    color: #333333;
+}
+.requisites-page__heading{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1062AA;
+}
+.requisites-page p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.requisites-page b{
+    font-weight: 700;
 }
