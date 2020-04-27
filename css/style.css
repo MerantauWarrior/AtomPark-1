@@ -2051,3 +2051,135 @@ a.blog-post__counter:hover svg{
     line-height: 16px;
     color: #333333;
 }
+/*Story Page*/
+.story{
+    margin-bottom: 60px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+.story__content{
+    margin-bottom: 75px;
+}
+.story img{
+    float: left;
+    margin-right: 30px;
+}
+.story h2{
+    margin: 38px 0 19px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: #1062AA;
+}
+.story p{
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+.story ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: my-counter;
+}
+.story ol li{
+    counter-increment: my-counter;
+    margin-top: 19px;
+}
+.story ol li::before {
+    content: counter(my-counter) ". ";
+    font-weight: 900;
+    color: #1062AA;
+}
+.story__bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+.story__about{
+    width: 100%;
+    max-width: 260px;
+}
+.story__rating{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 21px;
+}
+.story__rating-item{
+    margin-right: 2px;
+}
+.story__author{
+    font-size: 16px;
+    line-height: 32px;
+}
+.story__author-name{
+    font-weight: 500;
+}
+.story__author-date{
+    color: #807E7E;
+}
+.story__feedback{
+    width: 100%;
+    max-width: 650px;
+}
+.story__feedback a{
+    font-weight: 400;
+    text-decoration-line: underline;
+    color: #868585;
+}
+.story__feedback-content{
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 19px;
+}
+a.story__feedback-all{
+    display: flex;
+    align-items: center;
+    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.story__feedback-all-arrow{
+    margin-left: 8px;
+}
+a.story__feedback-link{
+    font-size: 12px;
+    line-height: 14px;
+}
+.btn-back{
+    display: inline-flex;
+    align-items: center;
+    color: #1062AA;
+}
+.btn-back svg{
+    fill: #1062AA;
+}
+.btn-back__icon{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding-left: 12px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid #1062AA;
+    margin-right: 27px;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.btn-back:hover{
+    color: #F7B916;
+}
+.btn-back:hover .btn-back__icon{
+    border: 2px solid #F7B916;
+}
+.btn-back:hover svg{
+    fill: #F7B916;
+}
