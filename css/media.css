@@ -533,7 +533,7 @@
         margin-bottom: 40px;
     }
     .stories-story__title{
-        min-height:auto;
+        min-height: 1px;
         font-size: 18px;
     }
 }
