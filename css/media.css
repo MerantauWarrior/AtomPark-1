@@ -527,6 +527,15 @@
         font-size: 18px;
         line-height: 21px;
     }
+    /*Stories page*/
+    .stories-story{
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .stories-story__title{
+        min-height:auto;
+        font-size: 18px;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .support__chat{
