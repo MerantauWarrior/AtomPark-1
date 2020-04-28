@@ -85,6 +85,20 @@
     .story__feedback{
         max-width: 69%;
     }
+    /*News page*/
+    .news__sidebar-subscribe-title{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .news__content{
+        max-width: 70%;
+    }
+    .news__sidebar{
+        max-width: 30%;
+    }
+    .news-item{
+        margin-bottom: 40px;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .info-page-article__img{
@@ -118,6 +132,41 @@
     .contacts__form-right,
     .checkbox-contacts__form{
         max-width: 48%;
+    }
+    /*News page*/
+    .news__content,
+    .news__sidebar{
+        max-width: 100%;
+    }
+    .news__sidebar{
+        order: 1;
+        margin-bottom: 60px;
+    }
+    .news__content{
+        order: 2;
+    }
+    .news__sidebar-subscribe{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    .news__sidebar-subscribe-form{
+        display: flex;
+        align-items: center;
+    }
+    .btn-sidebar-subscribe,
+    .inp-news:not(.inp-news--search){
+        width: 220px;
+    }
+    .news__sidebar-search{
+        margin-bottom: 30px;
+    }
+    .btn-sidebar-subscribe{
+        margin-top: 0;
+        margin-left: 15px;
+    }
+    .news__sidebar-subscribe-title{
+        margin-bottom: 0;
     }
 }
 
@@ -568,6 +617,31 @@
     }
     a.story__feedback-all{
         margin-bottom: 20px;
+    }
+    /*News page*/
+    .news__content,
+    .news__sidebar,
+    .news-item,
+    .news-item--main .news-item__img,
+    .news-item--main .news-item__content{
+        max-width: 100%;
+    }
+    .news-item--main .news-item__img{
+        margin-right: 0;
+    }
+    .news-item--main .news-item__date{
+        margin-top: 30px;
+    }
+    .news-item--main .news-item__link{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .news__sidebar,
+    .news-item{
+        margin-bottom: 40px;
+    }
+    .news-item--main{
+        flex-direction: column;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
