@@ -69,4 +69,14 @@ $(document).ready(function () {
       $('.contacts__form').slideToggle(250);
     });
   }
+//  Story
+  $('.js-story-show-more').click(function (e) {
+    e.preventDefault();
+    $('.js-story-show-more-content').toggle();
+    if($('.js-story-show-more-content').is(':visible')){
+      $(this).text('Свернуть');
+    }else{
+      $(this).text('Читать весь отзыв');
+    }
+  });
 });

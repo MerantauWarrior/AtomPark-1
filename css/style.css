@@ -2183,3 +2183,6 @@ a.story__feedback-link{
 .btn-back:hover svg{
     fill: #F7B916;
 }
+.js-story-show-more-content{
+    display: none;
+}
