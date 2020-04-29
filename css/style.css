@@ -2324,6 +2324,7 @@ a.story__feedback-link{
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
