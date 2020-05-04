@@ -1591,6 +1591,7 @@ a.blog-post__counter:hover svg{
 .contacts__left{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: flex-start;
     width: 100%;
     max-width: 400px;
@@ -2660,4 +2661,80 @@ a.story__feedback-link{
 .events-single__text a:hover{
     color: #F7B916;
     text-decoration: underline;
+}
+/*Contacts tech page*/
+.contacts__tech-img{
+
+}
+.contacts-item-tech{
+    display: flex;
+    margin-top: 40px;
+}
+.contacts__tech-rules{
+    display: flex;
+    align-items: center;
+    margin-top: 86px;
+    margin-bottom: 29px;
+}
+.contacts__tech-rules-icon{
+    margin-right: 30px;
+}
+.contacts__tech-rules a{
+    color: #1062AA;
+}
+.contacts__tech-rules a:hover{
+    color: #F7B916;
+}
+.contacts-socials{
+    width: 100%;
+    margin-top: 140px;
+    background: #fff url('../img/contacts-page/social-bg.jpg') center center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.contacts-socials__text-small{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #C4C4C4;
+    text-align: center;
+}
+.contacts-socials__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-socials__item{
+    margin: 0 13px 25px 13px;
+}
+.contacts-socials-vk svg{
+    fill: #1062AA;
+}
+.contacts-socials-vk:hover svg{
+    fill: #4C75A3;
+}
+.contacts-socials-insta svg{
+    fill: #1062AA;
+}
+.contacts-socials-insta:hover svg{
+    fill: #E4405F;
+}
+.contacts-socials-yt svg{
+    fill: #1062AA;
+}
+.contacts-socials-yt:hover svg{
+    fill: #CD201F;
+}
+.contacts-socials-tw svg{
+    fill: #1062AA;
+}
+.contacts-socials-tw:hover svg{
+    fill: #55ACEE;
+}
+.contacts-socials-fb svg{
+    fill: #1062AA;
+}
+.contacts-socials-fb:hover svg{
+    fill: #3B5999;
 }
