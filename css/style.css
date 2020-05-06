@@ -2967,3 +2967,45 @@ a.press-materials-download{
 .trust-feedback__text a:hover{
     color: #F7B916;
 }
+/*About Page*/
+.about{
+    color: #333333;
+}
+.about p{
+    line-height: 28px;
+}
+.about-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.about-list__item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 165px;
+    height: 165px;
+    margin: 0 15px;
+    padding: 20px 20px 29px 20px;
+    border: 2px solid #1062AA;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-align: center;
+}
+.about-list__item a{
+    display: flex;
+    align-items: center;
+    height: 38px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    color: #1062AA;
+}
+.about-list__item a:hover{
+    text-decoration: underline;
+}
