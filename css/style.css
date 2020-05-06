@@ -3003,11 +3003,10 @@ a.press-materials-download{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    text-decoration: none;
     color: #1062AA;
 }
 .about-list__item a:hover{
-    text-decoration: underline;
+    color: #F7B916;
 }
 /*Why Page*/
 .why{
