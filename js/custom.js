@@ -79,4 +79,76 @@ $(document).ready(function () {
       $(this).text('Читать весь отзыв');
     }
   });
+//  Why
+  if ($('.why-feedbacks__slider').length > 0) {
+    $('.why-feedbacks__slider').slick({
+      dots: true,
+      infinite: false,
+      slidesToShow: 1,
+      prevArrow: $('.why__arrow-prev-feedback'),
+      nextArrow: $('.why__arrow-next-feedback'),
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            dots: false
+          }
+        }
+      ]
+    });
+    $('.why__arrow-prev-feedback').hide();
+    $('.why-feedbacks__slider').on('afterChange', function (event, slick, currentSlide) {
+      var count = slick.slideCount;
+      if (currentSlide > 0) {
+        $('.why__arrow-prev-feedback').show();
+      } else {
+        $('.why__arrow-prev-feedback').hide();
+      }
+      if (currentSlide + 1 >= count) {
+        $('.why__arrow-next-feedback').hide();
+      } else {
+        $('.why__arrow-next-feedback').show();
+      }
+    });
+  }
+  if ($('.why-clients__slider').length > 0) {
+    $('.why-clients__slider').slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 5,
+      prevArrow: $('.why__arrow-prev-clients'),
+      nextArrow: $('.why__arrow-next-clients'),
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+    $('.why__arrow-prev-clients').hide();
+    $('.why-clients__slider').on('afterChange', function (event, slick, currentSlide) {
+      var count = slick.slideCount;
+      if (currentSlide > 0) {
+        $('.why__arrow-prev-clients').show();
+      } else {
+        $('.why__arrow-prev-clients').hide();
+      }
+      if (currentSlide + 1 >= count) {
+        $('.why__arrow-next-clients').hide();
+      } else {
+        $('.why__arrow-next-clients').show();
+      }
+    });
+  }
+
 });
