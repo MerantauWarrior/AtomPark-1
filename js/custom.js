@@ -153,5 +153,14 @@ $(document).ready(function () {
       }
     });
   }
+//  Product
+  if ($('.btn-product--unique').length > 0) {
+    $('.btn-product--unique').hover( function () {
+      $(this).attr('style', $(this).data('hover'));
+    }, function () {
+      $(this).attr('style', $(this).data('style'));
+    });
+  }
+
 
 });

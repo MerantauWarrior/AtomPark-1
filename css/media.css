@@ -868,6 +868,30 @@
         margin-left: auto;
         margin-right: auto;
     }
+    /*Product page*/
+    .product__category{
+        margin-bottom: 60px;
+        padding: 40px 0;
+    }
+    .product__category h2{
+        margin: 0;
+    }
+    .product-item__btns{
+        margin-top: 40px;
+    }
+    .product-item{
+        margin-bottom: 65px;
+    }
+    a.btn-product{
+        margin: 15px;
+    }
+    .product-item__hit,
+    .product-item__soon{
+        position: absolute;
+        bottom: 100%;
+        right: 0;
+        margin: 0;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .support__chat{
