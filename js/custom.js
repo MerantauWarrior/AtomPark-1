@@ -10,26 +10,29 @@ $(document).ready(function () {
   });
 //  VideoPage slider
   if ($('.video__movies-slider').length > 0) {
-    $('.video__movies-slider').slick({
-      dots: false,
-      infinite: false,
-      slidesToShow: 1,
-      prevArrow: $('.video__arrow-prev'),
-      nextArrow: $('.video__arrow-next')
-    });
-    $('.video__arrow-prev').hide();
-    $('.video__movies-slider').on('afterChange', function (event, slick, currentSlide) {
-      var count = slick.slideCount;
-      if (currentSlide > 0) {
-        $('.video__arrow-prev').show();
-      } else {
-        $('.video__arrow-prev').hide();
-      }
-      if (currentSlide + 1 >= count) {
-        $('.video__arrow-next').hide();
-      } else {
-        $('.video__arrow-next').show();
-      }
+    $('.video__movies-slider').each(function () {
+      var slider = $(this);
+      slider.slick({
+        dots: false,
+        infinite: false,
+        slidesToShow: 1,
+        prevArrow: slider.parent().find('.video__arrow-prev'),
+        nextArrow: slider.parent().find('.video__arrow-next')
+      });
+      slider.parent().find('.video__arrow-prev').hide();
+      slider.on('afterChange', function (event, slick, currentSlide) {
+        var count = slick.slideCount;
+        if (currentSlide > 0) {
+          slider.parent().find('.video__arrow-prev').show();
+        } else {
+          slider.parent().find('.video__arrow-prev').hide();
+        }
+        if (currentSlide + 1 >= count) {
+          slider.parent().find('.video__arrow-next').hide();
+        } else {
+          slider.parent().find('.video__arrow-next').show();
+        }
+      });
     });
   }
 //  BlogPost slider
