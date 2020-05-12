@@ -101,6 +101,11 @@ button{
     background-color: #1062AA;
 }
 /*General*/
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .general-style ul:not(.slick-dots){
     list-style: none;
     padding: 0;
