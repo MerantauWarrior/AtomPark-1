@@ -103,7 +103,7 @@ button{
 /*General*/
 ul{
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     list-style: none;
 }
 .general-style ul:not(.slick-dots){
