@@ -101,7 +101,8 @@ button{
     background-color: #1062AA;
 }
 /*General*/
-ul{
+.general-style ul,
+.general-style ol{
     margin: 0;
     padding: 0 !important;
     list-style: none;
