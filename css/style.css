@@ -100,6 +100,54 @@ button{
     color: #ffffff;
     background-color: #1062AA;
 }
+/*General*/
+.general-style ul:not(.slick-dots){
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+.general-style ul:not(.slick-dots) ul,
+.general-style ul:not(.slick-dots) ol{
+    margin: 0;
+}
+.general-style ul:not(.slick-dots) > li{
+    position: relative;
+    padding-left: 15px;
+}
+.general-style ul:not(.slick-dots) > li:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: #1062AA;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.general-style ol:not(.slick-dots){
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 26px;
+    counter-reset: my-counter;
+}
+.general-style ol:not(.slick-dots) ol,
+.general-style ol:not(.slick-dots) ul{
+    margin: 0;
+}
+.general-style ol:not(.slick-dots) > li{
+    counter-increment: my-counter;
+}
+.general-style ol:not(.slick-dots) > li:before {
+    content: counter(my-counter) ". ";
+    font-weight: 500;
+    color: #1062AA;
+}
 /*Info pages*/
 .info-page{
     padding: 80px 0;
