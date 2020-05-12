@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Slider</title>
+  <meta name="description" content="-30% на комбо-пакеты для email маркетологов"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/slider.css">
+
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+<section class="tariffs">
+  <div class="container container2">
+    <section class="cost">
+      <div class="cost_content">
+        <div class="cost_content-left">
+          <svg width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg" class="cost_content-img">
+            <rect x="1" y="1" width="48" height="48" rx="24" fill="#fff" stroke="#E5E5E5" stroke-width="2"/>
+            <path d="M26.984 29.777H23.06V33h-2.24v-3.223h-2.425v-1.851h2.425V26.32h-2.425v-1.84h2.425v-8.543h6.293c1.828 0 3.278.465 4.348 1.395 1.07.93 1.605 2.188 1.605 3.773 0 1.665-.515 2.95-1.547 3.856-1.023.898-2.48 1.352-4.37 1.36h-4.09v1.605h3.925v1.851zM23.06 24.48h4.054c1.211 0 2.133-.285 2.766-.855.633-.57.95-1.402.95-2.496 0-.992-.329-1.793-.985-2.402-.657-.618-1.543-.93-2.66-.938H23.06v6.691z"
+                  fill="#333"/>
+          </svg>
+          <div class="cost_content-section">
+            <p>
+              Сумма пополнения
+            </p>
+            <input type="text" id="contentSlider" class="js-tarrif-input" value="">
+          </div>
+        </div>
+
+        <div class="cost_content-right">
+          <input type="range" min="0" max="15000" step="100" value="500" class="slider"
+                 data-steps="0, 1000, 3000, 6000, 10000, 15000">
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<section class="tariffs">
+  <div class="container container2">
+    <section class="cost">
+      <div class="cost_content">
+        <div class="cost_content-left">
+          <svg width="50" height="50" fill="none" xmlns="http://www.w3.org/2000/svg" class="cost_content-img">
+            <rect x="1" y="1" width="48" height="48" rx="24" fill="#fff" stroke="#E5E5E5" stroke-width="2"/>
+            <path d="M26.984 29.777H23.06V33h-2.24v-3.223h-2.425v-1.851h2.425V26.32h-2.425v-1.84h2.425v-8.543h6.293c1.828 0 3.278.465 4.348 1.395 1.07.93 1.605 2.188 1.605 3.773 0 1.665-.515 2.95-1.547 3.856-1.023.898-2.48 1.352-4.37 1.36h-4.09v1.605h3.925v1.851zM23.06 24.48h4.054c1.211 0 2.133-.285 2.766-.855.633-.57.95-1.402.95-2.496 0-.992-.329-1.793-.985-2.402-.657-.618-1.543-.93-2.66-.938H23.06v6.691z"
+                  fill="#333"/>
+          </svg>
+          <div class="cost_content-section">
+            <p>
+              Сумма пополнения
+            </p>
+            <input type="text" id="contentSlider" class="js-tarrif-input" value="">
+          </div>
+        </div>
+
+        <div class="cost_content-right">
+          <input type="range" min="0" max="75000" step="100" value="7000" class="slider"
+                 data-steps="0, 5000, 20000, 30000, 60000, 75000">
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/rangeslider.min.js"></script>
+<script>
+  var stepsHtml = function (steps, maxValue) {
+    var markUp = '';
+    for(i=0;i<steps.length;i++){
+      markUp += '' +
+        '<div class="rangeslider-step" data-price="'+steps[i]+'"' +
+        'style="left: '+parseFloat((100/maxValue)*steps[i])+'%">' +
+        '<div class="rangeslider-step__number">'+parseFloat(steps[i]/1000)+'K</div>' +
+        '</div>';
+    }
+    return markUp;
+  };
+  $(document).ready(function () {
+    $('.slider').each(function () {
+      var slider = $(this);
+      slider.rangeslider({
+        polyfill: false,
+        rangeClass: 'tarrif-slider',
+        fillClass: 'tarrif-slider__fill',
+        handleClass: 'tarrif-slider__thumb',
+        onInit: function () {
+          slider.parent().parent().find('.js-tarrif-input').val(this.value);
+          var stepsValues = this.$element.data('steps').split(',');
+          slider.parent().append(stepsHtml(stepsValues, this.max));
+          slider.parent().on('click', '.rangeslider-step', function () {
+            slider.val(parseFloat($(this).data('price'))).change();
+          });
+          slider.parent().parent().find('.js-tarrif-input').on('input', function () {
+            var value = $(this).val();
+            if(value !== ''){
+              slider.val(value).change();
+            }
+          });
+        },
+        onSlide: function (position, value) {
+          slider.parent().parent().find('.js-tarrif-input').val(value);
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
