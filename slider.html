@@ -63,7 +63,7 @@
         </div>
 
         <div class="cost_content-right">
-          <input type="range" min="0" max="75000" step="100" value="7000" class="slider"
+          <input type="range" min="0" max="75000" value="7000" class="slider"
                  data-steps="0, 5000, 20000, 30000, 60000, 75000">
         </div>
       </div>
@@ -94,7 +94,7 @@
         handleClass: 'tarrif-slider__thumb',
         onInit: function () {
           slider.parent().parent().find('.js-tarrif-input').val(this.value);
-          var stepsValues = this.$element.data('steps').split(',');
+          var stepsValues = slider.data('steps').split(',');
           slider.parent().append(stepsHtml(stepsValues, this.max));
           slider.parent().on('click', '.rangeslider-step', function () {
             slider.val(parseFloat($(this).data('price'))).change();
