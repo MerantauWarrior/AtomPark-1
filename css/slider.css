@@ -57,14 +57,14 @@
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
 }
-/*.rangeslider-step:before{*/
-    /*content: "";*/
-    /*position: absolute;*/
-    /*top: 50px;*/
-    /*width: 2px;*/
-    /*height: 25px;*/
-    /*background-color: #C4C4C4;*/
-/*}*/
+.rangeslider-step:before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    width: 2px;
+    height: 25px;
+    background-color: #C4C4C4;
+}
 @media screen and (min-width: 320px) and (max-width: 767px){
     .tarrif-slider{
         width: 100%;
@@ -75,7 +75,7 @@
     .rangeslider-step{
         top: -50px;
     }
-    /*.rangeslider-step:before{*/
-        /*top: 40px;*/
-    /*}*/
+    .rangeslider-step:before{
+        top: 40px;
+    }
 }
