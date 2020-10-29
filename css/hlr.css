@@ -17,10 +17,11 @@
     -moz-border-radius: 45px;
     border-radius: 45px;
     background-color: #333333;
+    cursor: pointer;
 }
 .hlr-btn:hover{
     color: #333333;
-    background-color: #64E408;
+    background-color: #FFFFFF;
 }
 .hlr-btn--acid{
     font-size: 16px;
@@ -28,6 +29,113 @@
     color: #333333;
     background: -o-linear-gradient(357.85deg, #64E408 15.86%, rgba(255, 255, 255, 0) 91.06%), #04CE9B;
     background: linear-gradient(92.15deg, #64E408 15.86%, rgba(255, 255, 255, 0) 91.06%), #04CE9B;
+}
+.hlr-btn--acid:hover{
+    background: #64E408;
+}
+/*hero*/
+.hlr-hero{
+    padding: 85px 0 97px 0;
+    background: -o-linear-gradient(347.65deg, rgba(255, 255, 255, 0) 0%, #64E408 100%), #04CE9B;
+    background: linear-gradient(102.35deg, rgba(255, 255, 255, 0) 0%, #64E408 100%), #04CE9B;
+}
+.hlr-hero__img{
+    position: absolute;
+    right: 150px;
+    bottom: -117px;
+    z-index: 1;
+}
+.hlr-hero__img img{
+    margin: 0 auto;
+}
+.hlr-hero__img-desc{
+    display: block;
+}
+.hlr-hero__img-mob{
+    display: none;
+}
+.hlr-hero__sms{
+    position: absolute;
+    top: 105px;
+    right: 170px;
+}
+.hlr-hero-sms{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 232px;
+    height: 38px;
+    margin-bottom: 37px;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    box-shadow: -4px 4px 20px rgba(51, 51, 51, 0.2);
+}
+.hlr-hero-sms:nth-child(2){
+    margin-left: -38px;
+}
+.hlr-hero-sms:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #FFFFFF;
+    border-left: 7px solid transparent;
+    box-shadow: -4px 4px 20px rgba(51, 51, 51, 0.2);
+}
+.hlr-hero-sms--active{
+    color: #04CE9B;
+}
+.hlr-hero-sms--inactive{
+    color: #EB5757;
+}
+.hlr-hero-sms__icon{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -9px;
+}
+.hlr-hero__content{
+    width: 100%;
+    max-width: 530px;
+}
+.hlr-hero__title{
+    font-size: 36px;
+    line-height: 46px;
+    text-align: left;
+}
+.hlr-hero__text{
+    margin-top: 27px;
+    font-size: 18px;
+    line-height: 21px;
+}
+.hlr-hero__icons{
+    display: flex;
+    align-items: center;
+    margin: 42px 0 33px 0;
+}
+.hlr-hero-icon{
+    display: flex;
+    align-items: center;
+}
+.hlr-hero-icon:not(:last-child){
+    margin-right: 50px;
+}
+.hlr-hero-icon__img{
+    min-width: 53px;
+    width: 53px;
+    height: 53px;
+}
+.hlr-hero-icon__text{
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 21px;
 }
 /*benefits*/
 .hlr-benefits{
@@ -243,6 +351,105 @@
     line-height: 21px;
     text-align: center;
 }
+/*check*/
+.hlr-check{
+    padding-bottom: 140px;
+}
+.hlr-check__inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hlr-check__text{
+    width: 100%;
+    max-width: 470px;
+}
+.hlr-check__title{
+    text-align: left;
+}
+.hlr-check__description{
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.hlr-check__form{
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin-left: 120px;
+    padding: 40px 48px 45px 48px;
+    box-shadow: -4px 4px 20px rgba(51, 51, 51, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.hlr-check__form:before{
+    content: "";
+    position: absolute;
+    top: -27px;
+    right: -30px;
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: -o-linear-gradient(313.23deg, #64E408 0%, rgba(255, 255, 255, 0) 97.09%), #04CE9B;
+    background: linear-gradient(136.77deg, #64E408 0%, rgba(255, 255, 255, 0) 97.09%), #04CE9B;
+    z-index: -1;
+}
+.hlr-check__form-row{
+    margin-bottom: 27px;
+}
+.label-hlr-check{
+    display: block;
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.hlr-check__form-btn{
+    margin-top: 32px;
+}
+.btn-hlr-check{
+    font-size: 16px;
+    line-height: 19px;
+}
+.btn-hlr-check:hover{
+    background: -o-linear-gradient(357.85deg, #64E408 15.86%, rgba(255, 255, 255, 0) 91.06%), #04CE9B;
+    background: linear-gradient(92.15deg, #64E408 15.86%, rgba(255, 255, 255, 0) 91.06%), #04CE9B;
+}
+.inp-hlr-check{
+    display: block;
+    height: 50px;
+    padding: 10px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    border: 1px solid #333333;
+}
+.inp-hlr-check--tel{
+    width: 100%;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+}
+.hlr-check__form-combined{
+    display: flex;
+    justify-content: space-between;
+}
+.inp-hlr-check--num1,
+.inp-hlr-check--num2{
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.inp-hlr-check--num1{
+    width: 83px;
+}
+.inp-hlr-check--num2{
+    width: 163px;
+}
 /*table*/
 .hlr-table{
     padding: 124px 0 140px 0;
@@ -388,4 +595,239 @@
     content: "•";
     padding-right: 5px;
     color: #64E408;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    /*hero*/
+    .hlr-hero{
+        padding: 69px 0 0 0;
+        margin-bottom: 82px;
+    }
+    .hlr-hero__title{
+        line-height: 40px;
+        text-align: center;
+    }
+    .hlr-hero__title span{
+        color: #FFFFFF;
+    }
+    .hlr-hero__text{
+        margin-top: 29px;
+        text-align: center;
+    }
+    .hlr-hero__icons{
+        flex-wrap: wrap;
+        margin: 28px 0 45px 0;
+    }
+    .hlr-hero-icon:not(:last-child){
+        margin-right: 15px;
+    }
+    .hlr-hero-icon__text{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .hlr-hero-icon__text span{
+        display: block;
+    }
+    .hlr-hero__img{
+        position: relative;
+        right: auto;
+        left: 50%;
+        bottom: 0;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+    .hlr-hero__img-desc{
+        display: none;
+    }
+    .hlr-hero__img-mob{
+        display: block;
+    }
+    .hlr-hero__sms{
+        top: 66px;
+        right: auto;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+    .hlr-hero-sms{
+        margin-bottom: 20px;
+    }
+    .hlr-hero-sms:nth-child(2){
+        margin-left: 0;
+    }
+    .hlr-hero__btn{
+        position: absolute;
+        bottom: -82px;
+        left: 50%;
+        margin-left: -130px;
+        z-index: 2;
+    }
+    /*benefits*/
+    .hlr-benefits{
+        padding: 71px 0;
+    }
+    .hlr-benefits__title-sup{
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 40px
+    }
+    .hlr-benefits__title{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .hlr-benefits__title-sub{
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .hlr-benefits__items{
+        margin-top: 39px;
+    }
+    .hlr-benefits-item:not(:last-child){
+        margin-bottom: 37px;
+    }
+    .hlr-benefits-item__img,
+    .hlr-benefits-item:nth-child(even) .hlr-benefits-item__img{
+        order: 1;
+        margin-bottom: 24px;
+    }
+    .hlr-benefits-item__content,
+    .hlr-benefits-item:nth-child(even) .hlr-benefits-item__content{
+        order: 2;
+    }
+    .hlr-benefits-item__title:before{
+        display: none;
+    }
+    .hlr-benefits-item__text{
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .hlr-benefits__btn{
+        margin-top: 37px;
+    }
+    /*how*/
+    .hlr-how{
+        padding-bottom: 62px;
+    }
+    .hlr-how__title{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .hlr-how__items{
+        margin-top: 37px;
+    }
+    .hlr-how-item{
+        position: relative;
+        padding-top: 93px;
+        overflow: hidden;
+    }
+    .hlr-how-item:not(:last-child){
+        margin-bottom: 38px;
+    }
+    .hlr-how-item__number{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -30px;
+    }
+    .hlr-how-item__img{
+        order: 1;
+        margin-bottom: 24px;
+    }
+    .hlr-how-item__content{
+        order: 2;
+    }
+    .hlr-how-item__title, .hlr-how-item__text{
+        max-width: 100%;
+        margin-left: 0;
+    }
+    /*request*/
+    .hlr-request{
+        padding-bottom: 71px;
+    }
+    .hlr-request__title{
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .hlr-request__items{
+        justify-content: center;
+    }
+    .hlr-request-item{
+        margin-top: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    /*check*/
+    .hlr-check{
+        padding-bottom: 80px;
+    }
+    .hlr-check__title{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .hlr-check__form{
+        margin-top: 40px;
+        margin-left: 0;
+        padding: 40px;
+    }
+    .hlr-check__form:before{
+        top: -16px;
+        right: -15px;
+    }
+    /*table*/
+    .hlr-table{
+        padding: 74px 0 83px 0;
+    }
+    .hlr-table__title{
+        margin-bottom: 26px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .hlr-table__text-after{
+        margin-top: 23px;
+        margin-bottom: 38px;
+    }
+    .hlr-table__table table th{
+        font-size: 16px;
+    }
+    /*faqs*/
+    .hlr-faqs{
+        padding: 70px 0;
+    }
+    .hlr-faqs__title{
+        max-width: 100%;
+        margin-bottom: 28px;
+    }
+    .hlr-faqs__title:before{
+        display: none;
+    }
+    .hlr-faqs__title h2{
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+    }
+    .hlr-faqs-item:not(:last-child){
+        margin-bottom: 15px;
+    }
+    .hlr-faqs-item__top{
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .hlr-faqs-item__icon{
+        margin-left: 10px;
+    }
+    .hlr-faqs-item__title{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .hlr-faqs-item__content{
+        margin-top: 13px;
+    }
 }
