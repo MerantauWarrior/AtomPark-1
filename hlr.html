@@ -6,7 +6,7 @@
   <title>HLR</title>
   <meta name="description" content="-30% на комбо-пакеты для email маркетологов"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/hlr.css">
@@ -173,29 +173,75 @@
   <section class="hlr-check">
     <div class="container">
       <div class="hlr-check__inner">
+<!--        hlr-check__form_pending hlr-check__form_error-->
+        <form action="" method="get" class="hlr-check__form hlr-check__form_error">
+          <div class="hlr-check__form-inner">
+            <div class="hlr-check__form-pending">
+              <div class="hlr-check__form-pending-text">Ваш запрос обрабатывается</div>
+              <div class="hlr-check__form-pending-anim">
+                <div class="hlr-check__form-pending-anim-item"></div>
+                <div class="hlr-check__form-pending-anim-item"></div>
+                <div class="hlr-check__form-pending-anim-item"></div>
+              </div>
+            </div>
+            <div class="hlr-check__form-start">
+              <div class="hlr-check__form-row">
+                <label for="1" class="label-hlr-check">Номер телефона</label>
+                <input type="tel" name="tel" id="1" class="inp-hlr-check inp-hlr-check--tel" placeholder="+38 093  --- -- --">
+              </div>
+              <div class="hlr-check__form-btn">
+                <button class="hlr-btn btn-hlr-check" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
+              </div>
+              <div class="hlr-check__form-error">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.13846 4H9.87692L9.58462 10.7847H8.41538L8.13846 4ZM9.01538 14C8.72821 14 8.48718 13.915 8.29231 13.745C8.09744 13.5656 8 13.3484 8 13.0935C8 12.8385 8.09744 12.6261 8.29231 12.4561C8.48718 12.2767 8.72821 12.187 9.01538 12.187C9.30256 12.187 9.53846 12.2767 9.72308 12.4561C9.90769 12.6261 10 12.8385 10 13.0935C10 13.3484 9.90256 13.5656 9.70769 13.745C9.52308 13.915 9.29231 14 9.01538 14Z" fill="#F52A2A"/>
+                  <rect x="0.5" y="0.5" width="17" height="17" rx="8.5" stroke="#F52A2A"/>
+                </svg>
+                <span>
+                Превышен лимит на использование функции с вашего IP-адреса. Необходима регистрация.
+              </span>
+              </div>
+            </div>
+          </div>
+          <div class="hlr-check-info">
+            <div class="hlr-check-info__close">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="#EB5757"/>
+                <path d="M8.51782 8.81535L15.0643 15.3619" stroke="#EB5757" stroke-linecap="round"/>
+                <path d="M15.3619 8.51782L8.51785 15.3619" stroke="#EB5757" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="hlr-check-info__row">
+              <div class="hlr-check-info__col">В сети :</div>
+              <div class="hlr-check-info__col">В сети</div>
+            </div>
+            <div class="hlr-check-info__row">
+              <div class="hlr-check-info__col">Текущий оператор :</div>
+              <div class="hlr-check-info__col">Life:)</div>
+            </div>
+            <div class="hlr-check-info__row">
+              <div class="hlr-check-info__col">Портированный :</div>
+              <div class="hlr-check-info__col">Портированный</div>
+            </div>
+            <div class="hlr-check-info__row">
+              <div class="hlr-check-info__col">В роуминге :</div>
+              <div class="hlr-check-info__col">В роуминге</div>
+            </div>
+            <div class="hlr-check-info__row">
+              <div class="hlr-check-info__col">Статус :</div>
+              <div class="hlr-check-info__col">Доступен (находится в сети)</div>
+            </div>
+          </div>
+        </form>
         <div class="hlr-check__text">
           <h2 class="hlr-check__title">Проверить активность номера HLR запросом</h2>
           <p class="hlr-check__description">Дешевле один раз воспользоваться сервисом для проверки номера телефона и
             удалить из базы неактивных абонентов, чтобы не платит за СМС, которые абоненты не получат.</p>
         </div>
-        <div class="hlr-check__form">
-          <form action="" method="get">
-            <div class="hlr-check__form-row">
-              <label for="1" class="label-hlr-check">Номер телефона</label>
-              <input type="tel" name="tel" id="1" class="inp-hlr-check inp-hlr-check--tel" placeholder="+38 093  --- -- --">
-            </div>
-            <div class="hlr-check__form-row">
-              <label for="12" class="label-hlr-check">Проверить код с картинки</label>
-              <div class="hlr-check__form-combined">
-                <input type="text" name="num1" id="12" class="inp-hlr-check inp-hlr-check--num1">
-                <input type="text" name="num2" id="22" class="inp-hlr-check inp-hlr-check--num2">
-              </div>
-            </div>
-            <div class="hlr-check__form-btn">
-              <button class="hlr-btn btn-hlr-check" type="submit">ОТПРАВИТЬ ЗАПРОС</button>
-            </div>
-          </form>
-        </div>
+      </div>
+      <div class="hlr-check__register">
+        <div class="hlr-check__register-text">Чтобы проверить свою базу номеров необходимо зарегистрироваться</div>
+        <a href="#" class="hlr-btn hlr-btn--acid">РЕГИСТРАЦИЯ</a>
       </div>
     </div>
   </section>
@@ -466,6 +512,13 @@
       $(this).toggleClass('hlr-faqs-item__top_opened');
       $(this).siblings('.hlr-faqs-item__content').slideToggle(250);
     });
+    $('.btn-hlr-check').click(function (e) {
+      e.preventDefault();
+      $('.hlr-check-info').addClass('hlr-check-info_opened');
+    })
+    $('.hlr-check-info__close').click(function () {
+      $('.hlr-check-info').removeClass('hlr-check-info_opened');
+    })
   });
 </script>
 </body>
