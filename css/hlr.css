@@ -706,6 +706,7 @@
     min-width: 21px;
     height: 21px;
     margin-left: auto;
+    background: transparent url('../img/hlr/hlr-faqs.svg') center center no-repeat;
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     -ms-transition: all 0.25s;
