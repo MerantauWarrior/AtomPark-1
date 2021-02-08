@@ -953,6 +953,30 @@
     .blog{
         margin-bottom: 80px;
     }
+    /*electric-testing*/
+    .testing-tab{
+        padding-bottom: 60px;
+    }
+    .label-testing-tab-form{
+        margin-bottom: 18px;
+    }
+    .btn-regular-submit{
+        order: 4;
+    }
+    .testing-tab-form__checkbox{
+        order: 3;
+    }
+    .testing-tab-form__downloaded{
+        order: 5;
+    }
+    .testing-tab-info__imgs{
+        flex-direction: column;
+        width: 100%;
+    }
+    .testing-tab-info__imgs-item{
+        margin-top: 30px;
+        margin-left: 0;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .support__chat{

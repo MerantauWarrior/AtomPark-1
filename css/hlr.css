@@ -38,6 +38,7 @@
     padding: 85px 0 97px 0;
     background: -o-linear-gradient(347.65deg, rgba(255, 255, 255, 0) 0%, #64E408 100%), #04CE9B;
     background: linear-gradient(102.35deg, rgba(255, 255, 255, 0) 0%, #64E408 100%), #04CE9B;
+    overflow: hidden;
 }
 .hlr-hero__img{
     position: absolute;
@@ -707,6 +708,7 @@
     height: 21px;
     margin-left: auto;
     background: transparent url('../img/hlr/hlr-faqs.svg') center center no-repeat;
+    background-size: contain;
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     -ms-transition: all 0.25s;
