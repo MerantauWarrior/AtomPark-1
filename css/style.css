@@ -1264,7 +1264,6 @@ a.blog-post__counter:hover svg{
 .faqs__items{
     width: 100%;
     margin-bottom: 75px;
-    border: 2px solid #1062AA;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -1272,21 +1271,18 @@ a.blog-post__counter:hover svg{
 }
 .faqs-item{
     width: 100%;
-    border-top: 1px solid #1062AA;
-}
-.faqs-item:first-child{
-    border-top: none;
+    color: #333333;
+    border-bottom: 1px solid #E6E7EB;
 }
 .faqs-item__question{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 99px;
-    padding: 0 55px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #1062AA;
+    font-size: 18px;
+    line-height: 22px;
     cursor: pointer;
 }
 .faqs-item__arrow{
@@ -1297,12 +1293,8 @@ a.blog-post__counter:hover svg{
     transition: all 0.5s;
 }
 .faqs-item__arrow svg{
-    width: 24px;
-    fill: #1062AA;
-}
-.faqs-item__question_opened{
-    background-color: #1062AA;
-    color: #FFFFFF;
+    width: 22px;
+    stroke: #1062AA;
 }
 .faqs-item__question_opened .faqs-item__arrow{
     -webkit-transform: rotate(-180deg);
@@ -1311,11 +1303,8 @@ a.blog-post__counter:hover svg{
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg);
 }
-.faqs-item__question_opened .faqs-item__arrow svg{
-    fill: #ffffff;
-}
 .faqs-item__content{
-    padding: 40px 55px;
+    padding: 30px 0;
 }
 .faqs-item-answer{
     margin-bottom: 25px;
@@ -1325,9 +1314,8 @@ a.blog-post__counter:hover svg{
 }
 .faqs-item-answer__title{
     font-weight: 500;
-    font-size: 21px;
-    line-height: 25px;
-    color: #1062AA;
+    font-size: 18px;
+    line-height: 22px;
     cursor: pointer;
 }
 .faqs-item-answer__content{
@@ -3424,7 +3412,7 @@ a.btn-product--action:hover{
 }
 /*electric-testing*/
 .testing-tab{
-    padding-bottom: 130px;
+    padding-bottom: 120px;
     color: #333333;
 }
 .testing-tab__title{
@@ -3588,4 +3576,10 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
 }
 .testing-tab-info__imgs-item{
     margin-left: 30px;
+}
+.testing-tab__text-after{
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
 }
