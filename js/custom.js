@@ -1,4 +1,39 @@
 $(document).ready(function () {
+  // Only nambers
+  $.fn.inputFilter = function(inputFilter) {
+    return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
+      if (inputFilter(this.value)) {
+        this.oldValue = this.value;
+        this.oldSelectionStart = this.selectionStart;
+        this.oldSelectionEnd = this.selectionEnd;
+      } else if (this.hasOwnProperty("oldValue")) {
+        this.value = this.oldValue;
+        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+      } else {
+        this.value = "";
+      }
+    });
+  };
+  $(".js-number").inputFilter(function(value) {
+    return /^\d*$/.test(value);
+  });
+  $(".js-email").inputFilter(function(value) {
+    return /^[a-zA-Z0-9@+\.]*$/.test(value);
+  });
+  $('.js-isEmail').on('keyup blur', function(){
+    var valid = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,8})?$/.test(this.value) && this.value.length;
+    if(valid){
+      $(this).removeClass('error');
+    }else {
+      $(this).addClass('error');
+    }
+  });
+  $('.js-empty').on('keyup blur', function(){
+    var state = $('.js-empty').filter(function () {
+      return $.trim($(this).val()).length === 0
+    }).length === 0;
+    state === false ? $(this).closest('form').find('button').attr('disabled', true) : $(this).closest('form').find('button').attr('disabled', false);
+  });
 //  Tabs
   $('.js-tab').click(function (e) {
     e.preventDefault();
