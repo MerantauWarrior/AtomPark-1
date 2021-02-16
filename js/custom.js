@@ -29,6 +29,11 @@ $(document).ready(function () {
     }
   });
   $('.js-empty').on('keyup blur', function(){
+    if($.trim($(this).val()).length === 0){
+      $(this).addClass('error');
+    }else {
+      $(this).removeClass('error');
+    }
     var state = $('.js-empty').filter(function () {
       return $.trim($(this).val()).length === 0
     }).length === 0;

@@ -977,6 +977,15 @@
         margin-top: 30px;
         margin-left: 0;
     }
+    /*nikolay whatsapp*/
+    .whatsapp-form__inner{
+        padding: 60px 15px;
+        background-image: none;
+    }
+    .whatsapp-form__title{
+        font-size: 26px;
+        line-height: 32px;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .support__chat{
