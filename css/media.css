@@ -986,6 +986,56 @@
         font-size: 26px;
         line-height: 32px;
     }
+    /*Viber*/
+    .viber-top{
+        padding-bottom: 60px;
+    }
+    .viber-top__inner{
+        justify-content: center;
+    }
+    .viber-top__text-1,
+    .viber-top__content{
+        text-align: center;
+    }
+    .viber-top__btn{
+        margin-left: auto !important;
+    }
+    .viber-top__media{
+        margin-top: 60px;
+    }
+    .viber-benefits{
+        padding: 60px 0;
+    }
+    .viber-sms{
+        padding: 60px 0;
+    }
+    .viber-sms__inner{
+        flex-direction: column;
+    }
+    .viber-sms__media{
+        margin-bottom: 30px;
+    }
+    .viber-sms__content{
+        text-align: center;
+    }
+    .viber-sms__btn{
+        margin-left: auto !important;
+    }
+    .viber-prices{
+        margin-top: 60px;
+    }
+    .viber-registration{
+        margin-top: 60px;
+    }
+    .viber-registration__inner{
+        padding: 60px 15px;
+    }
+    .viber-registration__title{
+        font-size: 24px;
+    }
+    .faqs--viber{
+        margin: 60px 0;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .support__chat{
