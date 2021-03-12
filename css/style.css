@@ -1293,6 +1293,7 @@ a.blog-post__counter:hover svg{
     cursor: pointer;
 }
 .faqs-item__arrow{
+    min-width: 22px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -ms-transition: all 0.5s;
@@ -3672,7 +3673,7 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     margin-left: auto;
     margin-right: auto;
 }
-/*Viber*/
+/*Messengers*/
 .breadcrumbs ul{
     display: flex;
     align-items: center;
@@ -3701,31 +3702,38 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     color: #E5E5E5;
     text-decoration: none;
 }
-.viber-top{
+.messengers-top{
     padding-top: 36px;
+}
+.messengers-top--viber{
     padding-bottom: 140px;
     background: -o-linear-gradient(197.55deg, #7D3DAD 4.82%, rgba(125, 61, 173, 0) 50.01%), #593EBC;
     background: linear-gradient(252.45deg, #7D3DAD 4.82%, rgba(125, 61, 173, 0) 50.01%), #593EBC;
 }
-.viber-top__inner{
+.messengers-top--telegram{
+    padding-bottom: 80px;
+    background: -o-linear-gradient(199.32deg, #37AFE2 5.21%, rgba(41, 159, 217, 0) 61.72%), #1B92D4;
+    background: linear-gradient(250.68deg, #37AFE2 5.21%, rgba(41, 159, 217, 0) 61.72%), #1B92D4;
+}
+.messengers-top__inner{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 69px;
 }
-.viber-top__content{
+.messengers-top__content{
     width: 100%;
-    max-width: 512px;
+    max-width: 550px;
 }
-.viber-top__text-1{
+.messengers-top__text-1{
     margin-bottom: 23px;
     font-size: 46px;
     line-height: 56px;
     text-align: left;
     color: #FFFFFF;
 }
-.viber-top__text-2{
+.messengers-top__text-2{
     margin-bottom: 22px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -3733,24 +3741,30 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     line-height: 29px;
     color: #F7B916;
 }
-.viber-top__text-3{
+.messengers-top__text-3{
     margin-bottom: 44px;
     font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
 }
-.viber-top__btn{
+.messengers-top__btn{
     margin-left: 0 !important;
-    text-decoration: none;
 }
-.viber-benefits{
+.messengers-benefits--viber{
     padding: 125px 0 140px 0;
 }
-.viber-benefits__title{
+.messengers-benefits--telegram{
+    padding-top: 118px;
+}
+.messengers-benefits__title{
     font-size: 36px;
     line-height: 44px;
 }
-.viber-benefits__description{
+.messengers__title-w-700{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.messengers-benefits__description{
     width: 100%;
     max-width: 604px;
     margin: 26px auto 0 auto;
@@ -3758,13 +3772,13 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     line-height: 28px;
     text-align: center;
 }
-.viber-benefits__items{
+.messengers-benefits__items{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 16px;
 }
-.viber-benefits-item{
+.messengers-benefits-item{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3778,7 +3792,7 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     border-radius: 12px;
     box-shadow: -4px 4px 20px rgba(89, 62, 188, 0.2);
 }
-.viber-benefits-item__icon{
+.messengers-benefits-item__icon{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3790,7 +3804,7 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     border-radius: 100%;
     background-color: rgba(89, 62, 188, 0.05);
 }
-.viber-benefits-item__title{
+.messengers-benefits-item__title{
     width: 100%;
     max-width: 250px;
     padding-bottom: 18px;
@@ -3798,27 +3812,38 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+}
+.messengers-benefits--viber .messengers-benefits-item__title{
     color: #593EBC;
     border-bottom: 1px solid #593EBC;
 }
-.viber-benefits-item__description{
+.messengers-benefits--telegram .messengers-benefits-item__title{
+    color: #1062AA;
+    border-bottom: 1px solid #37AFE2;
+}
+.messengers-benefits-item__description{
     margin-top: 16px;
     font-size: 14px;
     line-height: 24px;
     text-align: center;
 }
-.viber-benefits-item__description span{
+.messengers-benefits-item__description span{
     display: block;
 }
-.viber-sms{
+.messengers-benefits__btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.messengers-sms{
     padding-top: 125px;
     background-color: #EFF2FB;
 }
-.viber-sms__title{
+.messengers-sms__title{
     font-size: 36px;
     line-height: 44px;
 }
-.viber-sms__description{
+.messengers-sms__description{
     width: 100%;
     max-width: 810px;
     margin: 27px auto 0 auto;
@@ -3826,41 +3851,41 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     line-height: 28px;
     text-align: center;
 }
-.viber-sms__inner{
+.messengers-sms__inner{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin-top: 37px;
 }
-.viber-sms__content{
+.messengers-sms__content{
     width: 100%;
     max-width: 460px;
 }
-.viber-sms__content-text-1{
+.messengers-sms__content-text-1{
     margin-bottom: 32px;
     font-weight: 700;
     font-size: 21px;
     line-height: 25px;
     color: #593EBC;
 }
-.viber-sms__content-text-2{
+.messengers-sms__content-text-2{
     margin-bottom: 37px;
     font-size: 18px;
     line-height: 28px;
 }
-.viber-sms__btn{
+.messengers-sms__btn{
     margin-left: 0 !important;
     text-decoration: none;
 }
-.viber-prices{
+.messengers-prices{
     margin-top: 126px;
 }
-.viber-prices__title{
+.messengers-prices__title{
     font-size: 36px;
     line-height: 44px;
 }
-.viber-prices__description{
+.messengers-prices__description{
     width: 100%;
     max-width: 810px;
     margin: 27px auto 0 auto;
@@ -3869,7 +3894,7 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     text-align: center;
     color: #333333;
 }
-.viber-prices__table{
+.messengers-prices__table{
     width: 100%;
     max-width: 810px;
     margin: 37px auto 0 auto;
@@ -3880,69 +3905,83 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     overflow-y: hidden;
     overflow-x: auto;
 }
-.viber-prices__table table{
+.messengers-prices__table table{
     width: 100%;
     min-width: 600px;
     border-collapse: collapse;
 }
-.viber-prices__table tr:not(:last-child){
+.messengers-prices__table tr:not(:last-child){
     border-bottom: 1px solid #593EBC;
 }
-.viber-prices__table td:not(:last-child),
-.viber-prices__table th:not(:last-child){
+.messengers-prices__table td:not(:last-child),
+.messengers-prices__table th:not(:last-child){
     border-right: 1px solid #593EBC;
 }
-.viber-prices__table td:first-child{
+.messengers-prices__table td:first-child{
     width: 195px;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     text-align: left;
 }
-.viber-prices__table thead tr{
+.messengers-prices__table thead tr{
     background-color: #EFF2FB;
 }
-.viber-prices__table th{
+.messengers-prices__table th{
     padding: 12px;
 }
-.viber-prices__table th,
-.viber-prices__table td{
+.messengers-prices__table th,
+.messengers-prices__table td{
     font-size: 18px;
     line-height: 24px;
     text-align: center;
 }
-.viber-prices__table th:nth-child(2),
-.viber-prices__table td:nth-child(2){
+.messengers-prices__table th:nth-child(2),
+.messengers-prices__table td:nth-child(2){
     color: #593EBC;
 }
-.viber-prices__table td{
+.messengers-prices__table td{
     padding: 40px;
 }
-.viber-prices__table-th{
+.messengers-prices__table-th{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.viber-prices__table-th img{
+.messengers-prices__table-th img{
     margin-right: 10px;
 }
-.viber-registration{
+.messengers-registration{
     margin-top: 140px;
 }
-.viber-registration__inner{
+.messengers-registration__inner{
+    position: relative;
     padding: 70px 0 84px 0;
-    background-color: #593EBC;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
 }
-.viber-registration__title{
+.messengers-registration--viber .messengers-registration__inner{
+    background-color: #593EBC;
+}
+.messengers-registration--telegram .messengers-registration__inner{
+    background: -o-linear-gradient(199.32deg, #37AFE2 5.21%, rgba(41, 159, 217, 0) 61.72%), #1B92D4;
+    background: linear-gradient(250.68deg, #37AFE2 5.21%, rgba(41, 159, 217, 0) 61.72%), #1B92D4;
+}
+.messengers-registration__bg-img{
+    position: absolute;
+}
+.messengers-registration--telegram .messengers-registration__bg-img{
+    left: 79px;
+    bottom: 205px;
+}
+.messengers-registration__title{
     width: 100%;
     max-width: 640px;
     margin: 0 auto;
     color: #ffffff;
 }
-.viber-registration__description{
+.messengers-registration__description{
     max-width: 590px;
     margin: 25px auto 0 auto;
     font-size: 18px;
@@ -3950,25 +3989,25 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     text-align: center;
     color: #FFFFFF;
 }
-.viber-registration__form{
+.messengers-registration__form{
     width: 100%;
     max-width: 398px;
     margin: 52px auto 0 auto;
 }
-.viber-registration__form-field{
+.messengers-registration__form-field{
     margin-bottom: 10px;
 }
-.viber-registration__form-field:first-child{
+.messengers-registration__form-field:first-child{
     margin-bottom: 20px;
 }
-.viber-registration__label{
+.messengers-registration__label{
     display: inline-block;
     margin-bottom: 8px;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
 }
-.viber-registration__inp{
+.messengers-registration__inp{
     display: block;
     width: 100%;
     padding: 11px 21px;
@@ -3982,32 +4021,32 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
 }
-.viber-registration__inp.error{
+.messengers-registration__inp.error{
     border: 1px solid #FF6341;
 }
-.viber-registration__inp::-webkit-input-placeholder {
+.messengers-registration__inp::-webkit-input-placeholder {
     color: #81859C;
 }
-.viber-registration__inp::-moz-placeholder {
+.messengers-registration__inp::-moz-placeholder {
     color: #81859C;
 }
-.viber-registration__inp:-ms-input-placeholder {
+.messengers-registration__inp:-ms-input-placeholder {
     color: #81859C;
 }
-.viber-registration__inp:-moz-placeholder {
+.messengers-registration__inp:-moz-placeholder {
     color: #81859C;
 }
-.viber-registration__policy{
+.messengers-registration__policy{
     margin-bottom: 25px;
     font-size: 11px;
     line-height: 18px;
     color: #FFFFFF;
 }
-.viber-registration__policy a{
+.messengers-registration__policy a{
     color: #ffffff;
 }
-.viber-registration__submit,
-.viber-btn{
+.messengers-registration__submit,
+.messengers-btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4019,23 +4058,108 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    text-decoration: none;
     background: #F7B916;
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
     border-radius: 45px;
 }
-.viber-btn:hover,
-.viber-registration__submit:hover{
+.messengers-btn:hover,
+.messengers-registration__submit:hover{
     background: -o-linear-gradient(180.75deg, #FFE735 18.99%, rgba(247, 185, 22, 0) 99.73%), #F7B916;
     background: linear-gradient(269.25deg, #FFE735 18.99%, rgba(247, 185, 22, 0) 99.73%), #F7B916;
     cursor: pointer;
 }
-.viber-registration__submit:disabled,
-.viber-registration__submit:hover:disabled{
+.messengers-registration__submit:disabled,
+.messengers-registration__submit:hover:disabled{
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.2);
     cursor: not-allowed;
 }
-.faqs--viber{
+.faqs--messengers{
     margin: 130px 0 140px 0;
+}
+/*telegram*/
+.telegram-info{
+    padding-top: 55px;
+}
+.telegram-info__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+.telegram-info-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.telegram-info-item__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 65px;
+    margin-bottom: 22px;
+}
+.telegram-info-item__text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+.telegram-info-item__text span{
+    display: block;
+}
+.telegram-tables{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.telegram-table{
+    width: 100%;
+    max-width: 320px;
+    margin: 37px 10px 0 10px;
+}
+.telegram-table__title{
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #37AFE2;
+}
+.telegram-table__table{
+    width: 100%;
+    border: 1px solid #1062AA;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-align: center;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.telegram-table__table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.telegram-table__table thead tr {
+    background-color: #EFF2FB;
+}
+.telegram-table__table tr:not(:last-child){
+    border-bottom: 1px solid #1062AA;
+}
+.telegram-table__table th,
+.telegram-table__table td{
+    padding: 20px;
+    font-size: 16px;
+    color: #333333;
+}
+.telegram-table__table td:first-child{
+    font-weight: 700;
+}
+.telegram-table__table td:not(:last-child), .telegram-table__table th:not(:last-child){
+    border-right: 1px solid #1062AA;
 }

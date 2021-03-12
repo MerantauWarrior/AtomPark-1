@@ -495,6 +495,9 @@
         line-height: 26px;
     }
     /*Faqs page*/
+    .faqs-item{
+        padding: 0;
+    }
     .faqs-item__question{
         height: auto;
         padding: 15px;
@@ -986,55 +989,65 @@
         font-size: 26px;
         line-height: 32px;
     }
-    /*Viber*/
-    .viber-top{
+    /*Messengers*/
+    .messengers-top{
         padding-bottom: 60px;
     }
-    .viber-top__inner{
+    .messengers-top__inner{
         justify-content: center;
     }
-    .viber-top__text-1,
-    .viber-top__content{
+    .messengers-top__text-1,
+    .messengers-top__content{
         text-align: center;
     }
-    .viber-top__btn{
+    .messengers-top__btn{
         margin-left: auto !important;
     }
-    .viber-top__media{
+    .messengers-top__media{
         margin-top: 60px;
     }
-    .viber-benefits{
+    .messengers-benefits{
         padding: 60px 0;
     }
-    .viber-sms{
+    .messengers-sms{
         padding: 60px 0;
     }
-    .viber-sms__inner{
+    .messengers-sms__inner{
         flex-direction: column;
     }
-    .viber-sms__media{
+    .messengers-sms__media{
         margin-bottom: 30px;
     }
-    .viber-sms__content{
+    .messengers-sms__content{
         text-align: center;
     }
-    .viber-sms__btn{
+    .messengers-sms__btn{
         margin-left: auto !important;
     }
-    .viber-prices{
+    .messengers-prices{
         margin-top: 60px;
     }
-    .viber-registration{
+    .messengers-registration{
         margin-top: 60px;
     }
-    .viber-registration__inner{
+    .messengers-registration__inner{
         padding: 60px 15px;
     }
-    .viber-registration__title{
+    .messengers-registration__title{
         font-size: 24px;
     }
-    .faqs--viber{
+    .faqs--messengers{
         margin: 60px 0;
+    }
+    /*telegram*/
+    .telegram-info__items{
+        justify-content: center;
+    }
+    .messengers-benefits--telegram{
+        padding-bottom: 0;
+    }
+    .messengers-registration--telegram .messengers-registration__bg-img{
+        display: none;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
