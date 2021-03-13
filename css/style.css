@@ -4047,6 +4047,7 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
 }
 .messengers-registration__submit,
 .messengers-btn{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -4059,15 +4060,20 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     line-height: 21px;
     color: #333333;
     text-decoration: none;
-    background: #F7B916;
+    background: -o-linear-gradient(180.75deg, #F7B916 18.99%, #F7B916 99.73%), #F7B916;
+    background: linear-gradient(269.25deg, #F7B916 18.99%, #F7B916 99.73%), #F7B916;
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
     border-radius: 45px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    overflow: hidden;
 }
 .messengers-btn:hover,
 .messengers-registration__submit:hover{
-    background: -o-linear-gradient(180.75deg, #FFE735 18.99%, rgba(247, 185, 22, 0) 99.73%), #F7B916;
-    background: linear-gradient(269.25deg, #FFE735 18.99%, rgba(247, 185, 22, 0) 99.73%), #F7B916;
     cursor: pointer;
 }
 .messengers-registration__submit:disabled,
@@ -4075,6 +4081,31 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     color: #FFFFFF;
     background: rgba(255, 255, 255, 0.2);
     cursor: not-allowed;
+}
+.messengers-btn span,
+.messengers-registration__submit span{
+    position: relative;
+    z-index: 2;
+}
+.messengers-btn:after,
+.messengers-registration__submit:after{
+    content: '';
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: -o-linear-gradient(180.75deg, #FFE735 18.99%, rgba(247, 185, 22, 0) 99.73%), #F7B916;
+    background: linear-gradient(269.25deg, #FFE735 18.99%, rgba(247, 185, 22, 0) 99.73%), #F7B916;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.messengers-btn:not(:disabled):hover:after,
+.messengers-registration__submit:not(:disabled):hover:after{
+    right: 0;
 }
 .faqs--messengers{
     margin: 130px 0 140px 0;
