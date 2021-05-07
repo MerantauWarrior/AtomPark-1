@@ -3994,11 +3994,8 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     max-width: 398px;
     margin: 52px auto 0 auto;
 }
-.messengers-registration__form-field{
-    margin-bottom: 10px;
-}
-.messengers-registration__form-field:first-child{
-    margin-bottom: 20px;
+.messengers-registration__form-field:not(:first-child){
+    margin-top: 20px;
 }
 .messengers-registration__label{
     display: inline-block;
@@ -4037,6 +4034,7 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     color: #81859C;
 }
 .messengers-registration__policy{
+    margin-top: 10px;
     margin-bottom: 25px;
     font-size: 11px;
     line-height: 18px;
@@ -4193,4 +4191,296 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
 }
 .telegram-table__table td:not(:last-child), .telegram-table__table th:not(:last-child){
     border-right: 1px solid #1062AA;
+}
+/*Messengers*/
+.breaker{
+    display: block;
+}
+.messengers-title{
+    font-size: 36px;
+    line-height: 44px;
+}
+.messengers-subtitle{
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+.messengers-top--all{
+    padding-bottom: 115px;
+    background: -o-radial-gradient(82.86% 26.88%, 82.86% 263.3%, #1062AA 14.66%, rgba(27, 146, 212, 0.534307) 91.64%), #1B92D4;
+    background: radial-gradient(82.86% 263.3% at 82.86% 26.88%, rgba(27, 146, 212, 0.534307) 14.66%, #1062AA 91.64%), #1B92D4;
+}
+.messengers-top--all .messengers-top__inner{
+    width: 100%;
+    max-width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.messengers-top__content--two{
+    max-width: 594px;
+}
+.messengers-benefits--all{
+    padding: 125px 0 138px 0;
+}
+.messengers-benefits--all .messengers-benefits__description{
+    max-width: 690px;
+}
+.messengers-benefits--all .messengers-benefits-item__title{
+    background: transparent url('../img/messengers/benefits-line.svg') bottom center no-repeat;
+}
+.messengers-levels{
+    padding-top: 125px;
+    background-color: #EFF2FB;
+}
+.messengers-levels__subtitle{
+    margin-top: 27px;
+}
+.messengers-levels__items{
+    margin-top: 65px;
+}
+.messengers-levels-item:not(:first-child){
+    padding-top: 90px;
+}
+.messengers-levels-item:nth-child(even){
+    background-color: #fff;
+}
+.messengers-levels-item:nth-child(even) .messengers-levels-item__media{
+    order: 2;
+}
+.messengers-levels-item__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+.messengers-levels-item__content{
+    width: 100%;
+    max-width: 490px;
+}
+.messengers-levels-item__logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 21px;
+    line-height: 25px;
+}
+.messengers-levels-item:nth-child(1) .messengers-levels-item__logo{
+    color: #25D366;
+}
+.messengers-levels-item:nth-child(2) .messengers-levels-item__logo{
+    color: #593EBC;
+}
+.messengers-levels-item:nth-child(3) .messengers-levels-item__logo{
+    color: #37AFE2;
+}
+.messengers-levels-item__logo img{
+    margin-right: 8px;
+}
+.messengers-levels-item__title{
+    margin-bottom: 21px;
+    font-size: 21px;
+    line-height: 25px;
+}
+.messengers-levels-item__description{
+    margin-bottom: 37px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.messengers-levels-item__btn{
+    margin: 0;
+}
+.messengers-cost{
+    margin-top: 118px;
+}
+.messengers-cost__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.messengers-cost-item{
+    width: 100%;
+    max-width: 322px;
+    margin: 40px 10px 0 10px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background-color: rgba(37, 211, 102, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+.messengers-cost-item__head{
+    padding: 13px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.messengers-cost-item:nth-child(1) .messengers-cost-item__head{
+    background-color: #25D366;
+    border-top-left-radius: 12px;
+}
+.messengers-cost-item:nth-child(2) .messengers-cost-item__head{
+    background-color: #593EBC;
+}
+.messengers-cost-item:nth-child(3) .messengers-cost-item__head{
+    background-color: #37AFE2;
+    border-top-right-radius: 12px;
+}
+.messengers-cost-item__body{
+    padding: 36px 15px;
+    text-align: center;
+}
+.messengers-cost-item__body-item:not(:last-child){
+    margin-bottom: 8px;
+}
+.messengers-cost-item__text-one{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+}
+.messengers-cost-item__text-two{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 31px;
+}
+.messengers-registration__inner{
+    background: -o-radial-gradient(61.79% 28.37%, 71.86% 197.96%, #1062AA 0%, rgba(27, 146, 212, 0.534307) 99.41%), #1B92D4;
+    background: radial-gradient(71.86% 197.96% at 61.79% 28.37%, #1062AA 0%, rgba(27, 146, 212, 0.534307) 99.41%), #1B92D4;
+}
+
+/*Select Currency*/
+.select{
+    position: relative;
+    width: 100%;
+}
+.select select{
+    display: none;
+}
+.select-selected{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #333333;
+    background-color: #fff;
+}
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 20px;
+    width: 16px;
+    height: 9px;
+    margin-top: -4.5px;
+    background: url("../img/general/select-arrow.svg") no-repeat 50% 50%;
+    background-size: contain;
+}
+.select-selected.select-arrow-active:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.select-items div, .select-selected{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+.select-items div{
+    height: 40px;
+    line-height: 40px;
+    color: #1062AA;
+}
+.select-items div.same-as-selected{
+    cursor: default;
+}
+.select-items div span, .select-selected span{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.select-items{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 1px;
+    background-color: #fff;
+    box-sizing: border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 999;
+}
+.select-hide{
+    display: none;
+}
+.select-items div:not(.same-as-selected):hover,
+.select-items div.same-as-selected{
+    background-color: #E9FBF0;
+    color: #333333;
+}
+/*messengers modal*/
+.messengers-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 600px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 999;
+}
+.messengers-modal__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.messengers-modal__top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    background-color: #EFF2FB;
+}
+.messengers-modal__content{
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 64px 0 66px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.messengers-modal__title{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #1062AA;
+}
+.messengers-modal__description{
+    margin-top: 21px;
+    font-size: 21px;
+    line-height: 31px;
+    color: #333333;
 }

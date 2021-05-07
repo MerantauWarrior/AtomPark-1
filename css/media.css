@@ -1049,6 +1049,48 @@
     .messengers-registration--telegram .messengers-registration__bg-img{
         display: none;
     }
+    .breaker{
+        display: inline;
+    }
+    .breadcrumbs ul{
+        padding: 0;
+    }
+    .messengers-top__text-1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    .messengers-title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .messengers-levels__items{
+        margin-top: 0;
+    }
+    .messengers-levels-item,
+    .messengers-levels-item:not(:first-child){
+        padding: 40px 0;
+    }
+    .messengers-levels-item__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .messengers-levels-item__media{
+        margin-bottom: 20px;
+    }
+    .messengers-levels-item:nth-child(even) .messengers-levels-item__media {
+        order: -1;
+    }
+    .messengers-modal{
+        max-width: 90%;
+    }
+    .messengers-modal__content{
+        padding: 30px 15px;
+    }
+    .messengers-cost-item{
+        overflow: hidden;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .support__chat{
@@ -1063,6 +1105,23 @@
     /*Migration page*/
     .migration-item{
         max-width: 50%;
+    }
+    .messengers-modal{
+        top: 30px;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+        max-width: 90%;
+    }
+    .messengers-modal__top{
+        height: 100px;
+        min-height: 100px;
+        padding: 10px;
+    }
+    .messengers-modal__top img{
+        max-height: 100%;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
