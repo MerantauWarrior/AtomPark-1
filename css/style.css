@@ -4432,6 +4432,13 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     background-color: #E9FBF0;
     color: #333333;
 }
+
+.select-msgers .select-items div:not(.same-as-selected):nth-child(2):hover{
+    background-color: #EEECF8;
+}
+.select-msgers .select-items div:not(.same-as-selected):nth-child(3):hover{
+    background-color: #EBF7FC;
+}
 /*messengers modal*/
 .messengers-modal{
     position: fixed;
