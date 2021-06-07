@@ -1091,6 +1091,13 @@
     .messengers-cost-item{
         overflow: hidden;
     }
+    /*animation messengers*/
+    .messengers-levels__img-desk{
+        display: none;
+    }
+    .messengers-levels__img-mob{
+        display: block;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .support__chat{

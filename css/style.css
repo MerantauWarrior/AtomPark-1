@@ -4491,3 +4491,59 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     line-height: 31px;
     color: #333333;
 }
+/*animation messengers*/
+.messengers-levels-item__media{
+    position: relative;
+}
+.messengers-levels__img-desk{
+    display: block;
+}
+.messengers-levels__img-mob{
+    display: none;
+}
+.messengers-levels-item-msgs{
+    position: absolute;
+    top: 114px;
+    left: 77px;
+}
+.messengers-levels-item-msgs--whatsapp .messengers-levels-item-msg:nth-child(2),
+.messengers-levels-item-msgs--telegram .messengers-levels-item-msg:nth-child(2){
+    margin-left: 30px;
+}
+.messengers-levels-item-msgs--whatsapp .messengers-levels-item-msg,
+.messengers-levels-item-msgs--telegram .messengers-levels-item-msg{
+    width: 290px;
+}
+.messengers-levels-item-msgs--viber{
+    left: auto;
+    right: 55px;
+}
+.messengers-levels-item-msgs--viber{
+    text-align: right;
+}
+.messengers-levels-item-msg{
+    display: inline-block;
+    height: 48px;
+    padding: 13px 18px;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: -4px 4px 20px rgba(51, 51, 51, 0.15);
+    font-size: 16px;
+    line-height: 21px;
+    white-space: nowrap;
+    text-align: center;
+}
+.messengers-levels-item-msg__t-green{
+    color: #25D366;
+}
+.messengers-levels-item-msg__bgc-green{
+    background-color: #DCF8C6;
+}
+.messengers-levels-item-msg__bgc-blue{
+    background-color: #D7F0FF;
+}
+.messengers-levels-item-msg:not(:last-child){
+    margin-bottom: 17px;
+}

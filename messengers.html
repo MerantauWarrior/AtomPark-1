@@ -7,6 +7,7 @@
   <meta name="description" content="-30% на комбо-пакеты для email маркетологов"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
@@ -94,7 +95,15 @@
   <div class="messengers-levels__items">
     <div class="messengers-levels-item">
       <div class="messengers-levels-item__inner">
-        <div class="messengers-levels-item__media"><img src="img/messengers/levels-1.png" alt="text"></div>
+        <div class="messengers-levels-item__media">
+          <img src="img/messengers/levels-1.png" alt="text" class="messengers-levels__img-mob">
+          <img src="img/messengers/levels-1-1.png" alt="text" class="messengers-levels__img-desk">
+          <div class="messengers-levels-item-msgs messengers-levels-item-msgs--whatsapp">
+            <div class="messengers-levels-item-msg" data-aos="fade-right" data-aos-offset="500" data-aos-delay="0" data-aos-once="true"><span class="messengers-levels-item-msg__t-green">1,5 миллиарда</span>&nbsp;получателей</div>
+            <div class="messengers-levels-item-msg messengers-levels-item-msg__bgc-green" data-aos="fade-left" data-aos-delay="0" data-aos-offset="500" data-aos-once="true">Отправка текстовых и медиа СМС</div>
+            <div class="messengers-levels-item-msg" data-aos="fade-right" data-aos-offset="500" data-aos-delay="0" data-aos-once="true">Универсальный способ рекламы</div>
+          </div>
+        </div>
         <div class="messengers-levels-item__content">
           <div class="messengers-levels-item__logo">
             <img src="img/messengers/levels-1-1.svg" alt="whatsapp">
@@ -110,7 +119,15 @@
     </div>
     <div class="messengers-levels-item">
       <div class="messengers-levels-item__inner">
-        <div class="messengers-levels-item__media"><img src="img/messengers/levels-2.png" alt="text"></div>
+        <div class="messengers-levels-item__media">
+          <img src="img/messengers/levels-2.png" alt="text" class="messengers-levels__img-mob">
+          <img src="img/messengers/levels-2-2.png" alt="text" class="messengers-levels__img-desk">
+          <div class="messengers-levels-item-msgs messengers-levels-item-msgs--viber">
+            <div class="messengers-levels-item-msg" data-aos="fade-left" data-aos-offset="500" data-aos-delay="0" data-aos-once="true">Длинные сообщения до 1000 символов</div>
+            <div class="messengers-levels-item-msg messengers-levels-item-msg__bgc-blue" data-aos="fade-right" data-aos-offset="500" data-aos-delay="0" data-aos-once="true">Ссылка в тексте для моментального отклика</div>
+            <div class="messengers-levels-item-msg" data-aos="fade-left" data-aos-offset="500" data-aos-delay="0" data-aos-once="true">Визуализация вашего предложения</div>
+          </div>
+        </div>
         <div class="messengers-levels-item__content">
           <div class="messengers-levels-item__logo">
             <img src="img/messengers/levels-2-2.svg" alt="whatsapp">
@@ -127,7 +144,15 @@
     </div>
     <div class="messengers-levels-item">
       <div class="messengers-levels-item__inner">
-        <div class="messengers-levels-item__media"><img src="img/messengers/levels-3.png" alt="text"></div>
+        <div class="messengers-levels-item__media">
+          <img src="img/messengers/levels-3.png" alt="text" class="messengers-levels__img-mob">
+          <img src="img/messengers/levels-3-3.png" alt="text" class="messengers-levels__img-desk">
+          <div class="messengers-levels-item-msgs messengers-levels-item-msgs--telegram">
+            <div class="messengers-levels-item-msg" data-aos="fade-left" data-aos-offset="500" data-aos-delay="0" data-aos-once="true">500 млн. целевых клиентов</div>
+            <div class="messengers-levels-item-msg messengers-levels-item-msg__bgc-green" data-aos="fade-right" data-aos-offset="500" data-aos-delay="0" data-aos-once="true">Поддержка любого типа контента</div>
+            <div class="messengers-levels-item-msg" data-aos="fade-left" data-aos-offset="500" data-aos-delay="0" data-aos-once="true">Единая цена для всех стран</div>
+          </div>
+        </div>
         <div class="messengers-levels-item__content">
           <div class="messengers-levels-item__logo">
             <img src="img/messengers/levels-3-3.svg" alt="telegram">
@@ -1005,7 +1030,7 @@
   </div>
 </section>
 
-<div class="messengers-modal">
+<div class="messengers-modal" style="display: none!important;">
   <div class="messengers-modal__close">
     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M18.4093 17.9941L1.76229 1.34708" stroke="#1062AA" stroke-linecap="round"/>
@@ -1022,8 +1047,17 @@
 </div>
 
 <script src="js/jquery-3.5.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/custom.js"></script>
 <script>
+  AOS.init({disable: 'mobile'});
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+    // true for mobile device
+    console.log("mobile device");
+  }else{
+    // false for not mobile device
+    console.log("not mobile device");
+  }
   $(document).ready(function () {
     $('.messengers-modal__close').click(function () {
       $(this).parent().remove();
