@@ -1098,6 +1098,41 @@
     .messengers-levels__img-mob{
         display: block;
     }
+    /*Subscriptions*/
+    .subscriptions-cta__list{
+        margin: 40px 0;
+    }
+    .subscriptions-email{
+        padding: 60px 0;
+    }
+    .subscriptions-title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .subscriptions-email__items{
+        margin-top: 20px;
+    }
+    .subscriptions-email__item{
+        margin: 20px 0;
+    }
+    .subscriptions-bottom{
+        padding-bottom: 60px;
+    }
+    .subscriptions-bottom__inner{
+        justify-content: center;
+    }
+    .subscriptions-bottom__content{
+        margin-top: 40px;
+    }
+    .subscriptions-bottom__item{
+        flex-direction: column;
+    }
+    .subscriptions-bottom__btn{
+        margin-right: 0;
+    }
+    .subscriptions-bottom__btn-text{
+        margin-top: 10px;
+    }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
     .support__chat{
