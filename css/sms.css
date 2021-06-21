@@ -750,7 +750,7 @@ h2 span{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 0;
+        margin: 0 auto;
         padding: 30px;
     }
     .sms-bonus__media{
@@ -759,6 +759,9 @@ h2 span{
     .sms-addons__items{
         margin-left: 0;
         margin-right: 0;
+    }
+    .sms-modules-item{
+        width: 112px;
     }
     .sms-bonus,
     .sms-examples,
