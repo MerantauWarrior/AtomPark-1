@@ -4639,6 +4639,10 @@ input[type="checkbox"]:checked + .label-testing-tab-form:before{
     line-height: 18px;
     color: #FFFFFF;
 }
+.subscriptions-cta__agreement a{
+    color: inherit;
+    text-decoration: underline;
+}
 .subscriptions-email{
     padding: 123px 0;
 }

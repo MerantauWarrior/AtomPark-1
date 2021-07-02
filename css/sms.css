@@ -605,6 +605,7 @@ h2 span{
     color: #333333;
 }
 .sms-modal{
+    display: none;
     position: fixed;
     top: 0;
     right: 0;

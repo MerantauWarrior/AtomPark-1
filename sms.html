@@ -221,9 +221,9 @@
         <form action="" method="get" class="sms-free__form">
           <label for="q" class="sms-free__label">Телефон </label>
           <input type="text" name="q" id="q" class="sms-free__inp" placeholder="+31 20 241 8700">
-          <button class="btn btn-primary" type="submit">Отправить</button>
+          <button class="btn btn-primary js-sms-free" type="submit">Отправить</button>
         </form>
-        <div class="sms-free__success sms-free__success_active">
+        <div class="sms-free__success" hidden>
           Успех! 😎 Встречайте сообщение в своем телефоне
         </div>
       </div>
@@ -407,6 +407,17 @@
 <script>
   $(document).ready(function () {
     console.log('ready');
+
+    var smsTry = 0;
+    $('.js-sms-free').click(function (e) {
+      e.preventDefault();
+      // your ajax
+      $('.sms-free__success').addClass('sms-free__success_active');
+      if (smsTry !== 0){
+        $('.sms-modal').show();
+      }
+      smsTry++;
+    });
 
     $('.sms-addons__items').slick({
       dots: true,
