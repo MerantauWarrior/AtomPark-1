@@ -157,3 +157,108 @@ ul > li:before{
     background-color: #fff;
     color: #1062AA;
 }
+.btn-p{
+    color: #1062AA;
+    border: 2px solid #1062AA;
+    background-color: transparent;
+}
+.btn-p:hover {
+    color: #ffffff;
+    border: 2px solid #1062AA;
+    background-color: #1062AA;
+}
+/*modal*/
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    background-color: rgba(51,51,51,0.5);
+    z-index: 99;
+}
+.modal__window{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #1062AA;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.modal__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 33px;
+    height: 33px;
+    background: transparent url('../img/general/modal-close.svg') center center no-repeat;
+    cursor: pointer;
+}
+/*video*/
+.video{
+    width: 100%;
+    max-width: 807px;
+    margin: 0 auto;
+    border: 2px solid #1062AA;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.video-item{
+    position: relative;
+    padding-top: 56.25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video-item:not(.video_playing):before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 1;
+}
+.video-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;
+    cursor: pointer;
+    z-index: 2;
+}
+.video-play path{
+    stroke: #1062AA;
+    fill: transparent;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.video-play:hover path{
+    stroke: #F7B916;
+    fill: #F7B916;
+}
+.video-item iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
