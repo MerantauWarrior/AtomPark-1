@@ -68,6 +68,9 @@ h6,
     font-size: 18px;
     line-height: 21px;
 }
+h2, h3, .h2, .h3 {
+    text-align: center;
+}
 button, input, textarea, select{
     padding: 0;
     outline: none;
