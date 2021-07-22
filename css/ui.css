@@ -170,6 +170,27 @@ ul > li:before{
     border: 2px solid #1062AA;
     background-color: #1062AA;
 }
+.btn-gold,
+.btn-gold-white{
+    background-color: #F7B916;
+    color: #333333;
+}
+.btn-gold:hover{
+    background-color: #1E0338;
+    color: #FFFFFF;
+}
+.btn-gold-white:hover{
+    background-color: #FFFFFF;
+}
+.btn-gold-empty{
+    border: 2px solid #F7B916;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+.btn-gold-empty:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #333333;
+}
 /*modal*/
 .modal{
     display: none;
