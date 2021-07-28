@@ -319,6 +319,7 @@
 .form-submit-btn_process:hover{
     color: #333333 !important;
     background-color: #fff !important;
+    cursor: default!important;
 }
 .form-submit-btn__progress{
     display: none;
