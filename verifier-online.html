@@ -611,6 +611,7 @@
                     <div class="price-table-range__steps">
                       <div class="price-table-range__step" data-qty="10000" data-price="0.0001"><div class="price-table-range__step-number">10 000</div></div>
                       <div class="price-table-range__step" data-qty="100000" data-price="0.00005"><div class="price-table-range__step-number">100 000</div></div>
+                      <div class="price-table-range__step" data-qty="250000" data-price="0.00005"><div class="price-table-range__step-number">250 000</div></div>
                       <div class="price-table-range__step" data-qty="500000" data-price="0.00004"><div class="price-table-range__step-number">500 000</div></div>
                       <div class="price-table-range__step" data-qty="1000000" data-price="0.00003"><div class="price-table-range__step-number">1&nbsp;М</div></div>
                       <div class="price-table-range__step" data-qty="2000000" data-price="0.00003"><div class="price-table-range__step-number">2&nbsp;М</div></div>
@@ -714,6 +715,7 @@
                       <div class="price-table-range__step" data-qty="1000" data-price="0.005"><div class="price-table-range__step-number">1 000</div></div>
                       <div class="price-table-range__step" data-qty="10000" data-price="0.0045"><div class="price-table-range__step-number">10 000</div></div>
                       <div class="price-table-range__step" data-qty="100000" data-price="0.0028"><div class="price-table-range__step-number">100 000</div></div>
+                      <div class="price-table-range__step" data-qty="250000" data-price="0.0016"><div class="price-table-range__step-number">250 000</div></div>
                       <div class="price-table-range__step" data-qty="500000" data-price="0.0016"><div class="price-table-range__step-number">500 000</div></div>
                       <div class="price-table-range__step" data-qty="1000000" data-price="0.0011"><div class="price-table-range__step-number">1&nbsp;М</div></div>
                     </div>
@@ -1153,8 +1155,8 @@
       var qty = $(this).data('qty');
       var price = $(this).data('price');
       var pos = $(this).index();
-      $(this).closest('.price-table-range').find('.price-table-range__slider-progress-fill').css('width',parseInt(pos*25)+'%');
-      $(this).closest('.price-table-range').find('.price-table-range__slider-progress-thumb').css('left',parseInt(pos*25)+'%');
+      $(this).closest('.price-table-range').find('.price-table-range__slider-progress-fill').css('width',parseInt(pos*20)+'%');
+      $(this).closest('.price-table-range').find('.price-table-range__slider-progress-thumb').css('left',parseInt(pos*20)+'%');
       $(this).closest('.price-table-range').find('.price-table-range__value').text('$'+parseInt(price*qty));
       $(this).closest('.price-table-range').find('.price-table-range__price').text(price+' per email');
     });
