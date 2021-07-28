@@ -397,7 +397,12 @@
           <form action="" method="get">
             <div class="form__row">
               <input type="email" name="fEmail" id="fEmail" class="form-inp" placeholder="Введите свой email">
-              <button class="btn btn-gold">Проверить</button>
+              <button class="btn btn-gold form-submit-btn" type="submit">
+                <span class="form-submit-btn__text">Проверить</span>
+                <span class="form-submit-btn__progress"></span>
+                <span class="form-submit-btn__good">Действительный</span>
+                <span class="form-submit-btn__bad">Недействительный</span>
+              </button>
             </div>
             <div class="form__divider">или</div>
             <div class="form__row">
@@ -1129,6 +1134,19 @@
 <script>
   $(document).ready(function () {
 
+    // form
+    $('.form-submit-btn').click(function (e) {
+      e.preventDefault();
+      var that = $(this);
+      $(this).addClass('form-submit-btn_process');
+      $(this).find('.form-submit-btn__text').text('Идет проверка...');
+      $(this).find('.form-submit-btn__progress').css('width', '100%');
+      setTimeout(function () {
+        that.find('.form-submit-btn__text').hide();
+        that.find('.form-submit-btn__progress').hide();
+        that.find('.form-submit-btn__bad').show();
+      },2000)
+    });
     // pricing table
     $('.price-table-range__step').click(function () {
       var qty = $(this).data('qty');

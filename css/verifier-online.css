@@ -310,7 +310,58 @@
 .form-label-upload span{
     margin-left: 15px;
 }
-
+.form-submit-btn{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.form-submit-btn_process,
+.form-submit-btn_process:hover{
+    color: #333333 !important;
+    background-color: #fff !important;
+}
+.form-submit-btn__progress{
+    display: none;
+}
+.form-submit-btn_process .form-submit-btn__progress{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: #35C8CB;
+    -webkit-transition: width 1.25s;
+    -moz-transition: width 1.25s;
+    -ms-transition: width 1.25s;
+    -o-transition: width 1.25s;
+    transition: width 1.25s;
+}
+.form-submit-btn__good,
+.form-submit-btn__bad{
+    display: none;
+    position: relative;
+}
+.form-submit-btn__good:before,
+.form-submit-btn__bad:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.form-submit-btn__good:before{
+    background-color: #35C8CB;
+}
+.form-submit-btn__bad:before{
+    background-color: #ED654C;
+}
 /*benefits*/
 .benefits{
     padding: 124px 0;
