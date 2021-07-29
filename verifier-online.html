@@ -10,8 +10,79 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet">
   <link rel="stylesheet" href="css/verifier-online.css">
+  <style>
+    .new-banner{
+      display: flex;
+      justify-content: center;
+      margin-top: 3px;
+      padding: 0 15px;
+      background: -o-linear-gradient(328.35deg, #FF416F 0%, #0072D7 46.92%, #35C8CB 100%), #35C8CB;
+      background: linear-gradient(121.65deg, #FF416F 0%, #0072D7 46.92%, #35C8CB 100%), #35C8CB;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      font-family: 'Montserrat', sans-serif;
+    }
+    .new-banner__link{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 60px;
+      color: #FFFFFF;
+    }
+    .new-banner__link:hover{
+      text-decoration: none !important;
+    }
+    .new-banner__link span:not(.new-banner__label){
+      color: #F7B916;
+      text-transform: uppercase;
+    }
+    .new-banner__label{
+      margin-right: 19px;
+      padding: 5px 8px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      background-color: #F7B916;
+      font-size: 16px;
+      line-height: 20px;
+      color: #333333;
+      text-transform: uppercase;
+    }
+    @media all and (max-width: 767px){
+      .new-banner{
+        padding: 15px;
+        text-align: center;
+      }
+      .new-banner__link{
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 24px;
+      }
+      .new-banner__label{
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+      .new-banner__link span:not(.new-banner__label){
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
+<div class="new-banner">
+  <a href="#" class="new-banner__link" target="_blank"><span class="new-banner__label">NEW</span>Long-awaited update of Atomic Verifier Online.&nbsp;<span>Get free 100 credits</span>&nbsp;for testing right now in your Member Area 😉</a>
+</div>
 <div class="progress">
   <div class="progress__bar"></div>
 </div>
