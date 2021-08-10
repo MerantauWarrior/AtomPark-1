@@ -348,7 +348,7 @@ ul > li:before{
 /*free*/
 .sms-free{
     padding: 125px 0 129px 0;
-    background: rgba(111, 198, 173, 0.1) url('../img/sms/sms-free-bg.png') 75% center no-repeat;
+    background: rgba(111, 198, 173, 0.1) url('../img/sms/sms-free-bg.png') 80% center no-repeat;
 }
 .sms-free__title{
     width: 100%;
