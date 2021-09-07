@@ -2962,13 +2962,13 @@ a.press-materials-download{
     margin-right: 15px;
     margin-bottom: 60px;
 }
-.trust-list__item img:first-child{
+.trust-list__item img.hide{
     display: none;
 }
-.trust-list__item:hover img:last-child{
+.trust-list__item:hover img.show{
     display: none;
 }
-.trust-list__item:hover img:first-child{
+.trust-list__item:hover img.hide{
     display: block;
 }
 .trust-more{
